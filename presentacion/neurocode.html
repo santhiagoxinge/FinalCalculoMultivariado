@@ -25,7 +25,7 @@
 <main class="deck" id="deck">
 
 <!-- ========================= 01 · PORTADA ========================= -->
-<section class="slide titlepage" data-title="NeuroCode" data-sec="Portada" data-who="Integrante 1">
+<section class="slide titlepage" data-p="Slide 1: qué es cada cosa" data-title="NeuroCode" data-sec="Portada" data-who="Integrante 1">
   <img class="banner" src="assets/ucc_banner.jpg" alt="Universidad Cooperativa de Colombia">
   <div class="tp">
     <h1 class="r d1">NeuroCode: ¿a qué velocidad gira tu cerebro?</h1>
@@ -37,8 +37,7 @@
   <p class="explica"><b>La pregunta:</b> ¿cuántos milisegundos más tarda el cerebro por cada grado que gira una letra? La respondemos buscando la recta que mejor describe los datos, minimizando una función de dos variables, <b>S(a, b)</b>.</p>
 </section>
 
-<!-- ========================= 02 · EXPERIMENTO ========================= -->
-<section class="slide" data-title="Un experimento real" data-sec="Problema y datos" data-who="Integrante 1">
+<section class="slide" data-p="Slide 2: qué es cada cosa" data-title="Un experimento real" data-sec="Problema y datos" data-who="Integrante 1">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">El experimento · Shepard y Metzler, 1971</span><span class="num">02</span></div>
     <div class="body">
@@ -60,8 +59,7 @@
   <p class="explica"><b>x</b> = ángulo de la R, en grados (lo controlamos) · <b>y</b> = tiempo de respuesta, en ms (lo medimos). Solo usamos aciertos: si se equivocó, no sabemos si giró la letra o adivinó.</p>
 </section>
 
-<!-- ========================= 02b · CÓMO MEDIMOS ========================= -->
-<section class="slide" data-title="Cómo medimos el tiempo" data-sec="Problema y datos" data-who="Integrante 1">
+<section class="slide" data-p="Slide 3: qué es cada cosa" data-title="Cómo medimos el tiempo" data-sec="Problema y datos" data-who="Integrante 1">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">app/index.html · protocolo de un ensayo</span><span class="num">—</span></div>
     <div class="body">
@@ -82,8 +80,7 @@
   <p class="explica"><b>Instrumento:</b> nuestra app web. El reloj del navegador, <b>performance.now()</b>, mide con precisión menor a 1 ms. <b>t₀</b> = instante en que aparece la R; <b>y</b> = momento en que presiona la tecla − t₀.</p>
 </section>
 
-<!-- ========================= 03 · TENDENCIA ========================= -->
-<section class="slide" data-title="El tiempo sube con el ángulo" data-sec="Problema y datos" data-who="Integrante 1">
+<section class="slide" data-p="Slide 4: qué es cada cosa" data-title="El tiempo sube con el ángulo" data-sec="Problema y datos" data-who="Integrante 1">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Exploración de los datos</span><span class="num">03</span></div>
     <div class="body">
@@ -95,8 +92,7 @@
   <p class="explica">Cada punto de color es un ensayo; los negros son el <b>promedio ȳ</b> de los 85 tiempos de cada ángulo. Los promedios suben casi en línea recta: por eso proponemos el modelo <b>y = a·x + b</b>.</p>
 </section>
 
-<!-- ========================= 04 · PUENTE (LABORATORIO) ========================= -->
-<section class="slide" data-title="Un punto (a, b) es una recta" data-sec="Problema y datos" data-who="Integrante 1">
+<section class="slide" data-p="Slide 5: qué es cada cosa" data-title="Un punto (a, b) es una recta" data-sec="Problema y datos" data-who="Integrante 1">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Laboratorio en vivo · arrastra el punto</span><span class="num">04</span></div>
     <div class="body">
@@ -131,8 +127,7 @@
   <p class="explica"><b>a</b> = pendiente: cuántos ms más por cada grado. <b>b</b> = intercepto: el tiempo que predice la recta a 0°. Cada par (a, b) es una recta distinta, o sea un punto del plano; el color es su error <b>S</b>.</p>
 </section>
 
-<!-- ========================= 05 · S(a,b) ========================= -->
-<section class="slide" data-title="Medimos el error: S(a, b)" data-sec="Problema y datos" data-who="Integrante 1">
+<section class="slide" data-p="Slide 6: qué es cada cosa" data-title="Medimos el error: S(a, b)" data-sec="Problema y datos" data-who="Integrante 1">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Función de dos variables</span><span class="num">05</span></div>
     <div class="body">
@@ -153,8 +148,7 @@
   <p class="explica"><b>S(a, b)</b> es la función de error (función de costo u objetivo): la suma de los residuos al cuadrado. <b>yᵢ</b> = tiempo medido, <b>a·xᵢ + b</b> = tiempo que predice la recta, <b>i</b> = 1 … 595. Método: mínimos cuadrados.</p>
 </section>
 
-<!-- ========================= 06 · ∇S = 0 ========================= -->
-<section class="slide" data-title="Mínimo ⇒ ∇S = 0" data-sec="Gradiente y Hessiano" data-who="Integrante 2">
+<section class="slide" data-p="Slide 7: qué es cada cosa" data-title="Mínimo ⇒ ∇S = 0" data-sec="Gradiente y Hessiano" data-who="Integrante 2">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Derivadas parciales · regla de la cadena</span><span class="num">06</span></div>
     <div class="body" style="justify-content:center">
@@ -170,11 +164,10 @@
       </div>
     </div>
   </div>
-  <p class="explica"><b>La derivada es la pendiente de la recta tangente.</b> En un máximo o un mínimo la tangente es horizontal: pendiente 0. Por eso ∇S = 0 no es «para despejar»: es la condición que cumple todo <b>punto crítico</b>. Así se buscan máximos y mínimos de cualquier función: derivada = 0 da los candidatos y la segunda derivada dice cuál es cuál (slide 9).</p>
+  <p class="explica"><b>Punto de partida:</b> 1) derivar S respecto a a y a b; 2) igualar a cero; 3) resolver; 4) segunda derivada (slide 9). <b>La derivada es la pendiente de la recta tangente</b>: en un máximo o un mínimo la tangente es horizontal, pendiente 0. Igualar a cero no es «para despejar»: es buscar los <b>puntos críticos</b>.</p>
 </section>
 
-<!-- ========================= 07 · RESULTADO ========================= -->
-<section class="slide" data-title="Qué significan a* y b*" data-sec="Gradiente y Hessiano" data-who="Integrante 2">
+<section class="slide" data-p="Slide 8: qué es cada cosa" data-title="Qué significan a* y b*" data-sec="Gradiente y Hessiano" data-who="Integrante 2">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Solución del sistema 2 × 2</span><span class="num">07</span></div>
     <div class="body" style="justify-content:center">
@@ -204,8 +197,7 @@
   <p class="explica"><b>a*</b> y <b>b*</b> son la mejor recta, la que menos se equivoca. a* = 2.75 ms es el costo de girar un grado; b* = 683 ms es ver, decidir y presionar sin girar. <b>ŷ</b> («y gorro») = tiempo que predice la recta.</p>
 </section>
 
-<!-- ========================= 08 · HESSIANO ========================= -->
-<section class="slide" data-title="El Hessiano confirma el mínimo" data-sec="Gradiente y Hessiano" data-who="Integrante 2">
+<section class="slide" data-p="Slide 9: qué es cada cosa" data-title="El Hessiano confirma el mínimo" data-sec="Gradiente y Hessiano" data-who="Integrante 2">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Criterio de la segunda derivada</span><span class="num">08</span></div>
     <div class="body" style="justify-content:center">
@@ -222,8 +214,7 @@
   <p class="explica">∇S = 0 da un punto crítico: <b>mínimo, máximo o silla</b>. Lo decide la curvatura (segundas derivadas, <b>H</b>). det H > 0 y S<sub>aa</sub> > 0 ⇒ S es <b>convexa</b> (forma de taza, curva hacia arriba) ⇒ mínimo; si fuera cóncava sería máximo. <b>Mínimo local</b> = el más bajo de su alrededor; <b>global</b> = el más bajo de todos. H no depende de a ni b, así que S es convexa en todo el plano: no hay otro mínimo, el local es el global.</p>
 </section>
 
-<!-- ========================= 09 · EL VALLE (BLENDER) ========================= -->
-<section class="slide" data-title="Un valle con un solo fondo" data-sec="Geometría 3D" data-who="Integrante 3">
+<section class="slide" data-p="Slide 10: qué es cada cosa" data-title="Un valle con un solo fondo" data-sec="Geometría 3D" data-who="Integrante 3">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Superficie z = S(a, b) · render en Blender</span><span class="num">09</span></div>
     <div class="body">
@@ -245,11 +236,10 @@
       <p class="cap r d3">En el mínimo el plano tangente es <b class="amber">horizontal</b>. La bolita sigue <b>−∇S</b>: perpendicular a las elipses, siempre hacia el fondo.</p>
     </div>
   </div>
-  <p class="explica">El piso son todas las rectas (a, b); la altura <b>z</b> es su error S. La superficie es <b>convexa</b> (una taza): tiene un solo fondo, así que ese mínimo es <b>global</b>. <b>Curvas de nivel</b> = rectas con el mismo error. <b>−∇S</b> apunta cuesta abajo y es perpendicular a las curvas de nivel.</p>
+  <p class="explica"><b>Cómo se dibujó:</b> una cuadrícula de 140 × 140 rectas (a, b) alrededor del óptimo; para cada una calculamos S con los 595 datos, y la altura <b>z</b> es ese error. <b>Qué superficie es:</b> un <b>paraboloide elíptico</b> (S es de grado 2 en a y b), convexo: una taza con un solo fondo, el mínimo global. Curvas de nivel = rectas con el mismo error; −∇S apunta cuesta abajo, perpendicular a ellas.</p>
 </section>
 
-<!-- ========================= 10 · ELIPSES INCLINADAS ========================= -->
-<section class="slide" data-title="¿Por qué las elipses se inclinan?" data-sec="Geometría 3D" data-who="Integrante 3">
+<section class="slide" data-p="Slide 11: qué es cada cosa" data-title="¿Por qué las elipses se inclinan?" data-sec="Geometría 3D" data-who="Integrante 3">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Término cruzado del Hessiano</span><span class="num">10</span></div>
     <div class="body">
@@ -277,8 +267,7 @@
   <p class="explica"><b>S<sub>ab</sub></b> mide cómo se acoplan a y b: si sube la pendiente, el intercepto debe bajar para seguir pasando por el centro (90°, 930 ms). Restando 90° a x, S<sub>ab</sub> = 0 y las elipses quedan derechas.</p>
 </section>
 
-<!-- ========================= 11 · TRAZAS ========================= -->
-<section class="slide" data-title="Cada corte es una parábola" data-sec="Geometría 3D" data-who="Integrante 3">
+<section class="slide" data-p="Slide 12: qué es cada cosa" data-title="Cada corte es una parábola" data-sec="Geometría 3D" data-who="Integrante 3">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Trazas y secciones transversales</span><span class="num">11</span></div>
     <div class="body">
@@ -290,8 +279,7 @@
   <p class="explica"><b>Traza:</b> cortar la superficie fijando una variable (b = b*). Queda una parábola que abre hacia arriba (convexa), con el vértice justo en a*: ahí la pendiente de la tangente es 0 y es un mínimo.</p>
 </section>
 
-<!-- ========================= 12 · CÓDIGO ========================= -->
-<section class="slide" data-title="El código replica el cálculo" data-sec="Algoritmo y validación" data-who="Integrante 3">
+<section class="slide" data-p="Slide 13: qué es cada cosa" data-title="El código replica el cálculo" data-sec="Algoritmo y validación" data-who="Integrante 3">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">codigo/ajuste.py · diagrama de flujo</span><span class="num">12</span></div>
     <div class="body" style="justify-content:center">
@@ -312,8 +300,7 @@
   <p class="explica">Cada caja es un paso del cálculo a mano. <b>n</b> = 595 ensayos; <b>Σ</b> = suma de todos. Las librerías (NumPy, SciPy) solo se usan al final, para verificar.</p>
 </section>
 
-<!-- ========================= 12b · DIAGRAMA DE FLUJO ========================= -->
-<section class="slide" data-title="Diagrama de flujo" data-sec="Algoritmo y validación" data-who="Integrante 3">
+<section class="slide" data-p="Slide 14: qué es cada cosa" data-title="Diagrama de flujo" data-sec="Algoritmo y validación" data-who="Integrante 3">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Diagrama de flujo de codigo/ajuste.py</span><span class="num">—</span></div>
     <div class="body">
@@ -352,8 +339,7 @@
   <p class="explica"><b>load()</b> lee los CSV, <b>fit()</b> calcula a* y b*, <b>hessian()</b> arma H y <b>metrics()</b> da RMSE y R². La rama «no» solo pasaría si todos los ángulos fueran iguales (det H = 0).</p>
 </section>
 
-<!-- ========================= 12c · PSEUDOCÓDIGO ========================= -->
-<section class="slide" data-title="Pseudocódigo" data-sec="Algoritmo y validación" data-who="Integrante 3">
+<section class="slide" data-p="Slide 15: qué es cada cosa" data-title="Pseudocódigo" data-sec="Algoritmo y validación" data-who="Integrante 3">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">codigo/pseudocodigo.md</span><span class="num">—</span></div>
     <div class="body">
@@ -373,8 +359,7 @@
   <p class="explica"><b>Sx, Sy, Sxx, Sxy</b> = Σx, Σy, Σx², Σxy, acumuladas en un solo recorrido: <b>O(n)</b>. No hay iteraciones: la fórmula que sale de ∇S = 0 da el mínimo exacto.</p>
 </section>
 
-<!-- ========================= 12d · fit() ========================= -->
-<section class="slide" data-title="Código: fit()" data-sec="Algoritmo y validación" data-who="Integrante 3">
+<section class="slide" data-p="Slide 16: qué es cada cosa" data-title="Código: fit()" data-sec="Algoritmo y validación" data-who="Integrante 3">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">codigo/ajuste.py · líneas 77–84</span><span class="num">—</span></div>
     <div class="body">
@@ -398,8 +383,7 @@
   <p class="explica"><b>x</b> e <b>y</b> son vectores de 595 números. <b>sx**2</b> = (Σx)², el total al cuadrado; <b>sxx</b> = Σx², la suma de los cuadrados. <b>d</b> = D₀ = nΣx² − (Σx)².</p>
 </section>
 
-<!-- ========================= 12e · S, grad, H, metrics ========================= -->
-<section class="slide" data-title="Código: S, ∇S, H y R²" data-sec="Algoritmo y validación" data-who="Integrante 3">
+<section class="slide" data-p="Slide 17: qué es cada cosa" data-title="Código: S, ∇S, H y R²" data-sec="Algoritmo y validación" data-who="Integrante 3">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">codigo/ajuste.py · líneas 87–105</span><span class="num">—</span></div>
     <div class="body">
@@ -421,8 +405,7 @@
   <p class="explica"><b>e</b> = residuos (real − predicho). <b>grad_S</b> = (∂S/∂a, ∂S/∂b): en (a*, b*) da ≈ 0. <b>hessian(x)</b> no recibe a ni b porque H es constante. <b>sse</b> = S mín, <b>sst</b> = variación total.</p>
 </section>
 
-<!-- ========================= 12f · DESCENSO ========================= -->
-<section class="slide" data-title="Algoritmo de descenso por gradiente" data-sec="Algoritmo y validación" data-who="Integrante 3">
+<section class="slide" data-p="Slide 18: qué es cada cosa" data-title="Algoritmo de descenso por gradiente" data-sec="Algoritmo y validación" data-who="Integrante 3">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">codigo/lab/descent.js · otra forma de llegar al mínimo</span><span class="num">—</span></div>
     <div class="body">
@@ -442,8 +425,7 @@
   <p class="explica"><b>η</b> = tamaño del paso; <b>g_a, g_b</b> = las dos derivadas parciales (el gradiente). Cada paso va en contra del gradiente porque el gradiente apunta cuesta arriba. Llega al mismo mínimo; el resultado oficial es la fórmula.</p>
 </section>
 
-<!-- ========================= 13 · VALIDACIÓN ========================= -->
-<section class="slide" data-title="Tres vías, mismo punto" data-sec="Algoritmo y validación" data-who="Integrante 3">
+<section class="slide" data-p="Slide 19: qué es cada cosa" data-title="Tres vías, mismo punto" data-sec="Algoritmo y validación" data-who="Integrante 3">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Validación numérica</span><span class="num">13</span></div>
     <div class="body" style="justify-content:center">
@@ -464,8 +446,7 @@
   <p class="explica"><b>Manual</b> = calculadora; <b>código propio</b> = ajuste.py; <b>polyfit</b> y <b>linregress</b> = librerías. 10⁻¹⁴ = 0.00000000000001: es redondeo del computador, no un error.</p>
 </section>
 
-<!-- ========================= 14 · RESIDUOS ========================= -->
-<section class="slide" data-title="Residuos centrados en 0" data-sec="Algoritmo y validación" data-who="Integrante 3">
+<section class="slide" data-p="Slide 20: qué es cada cosa" data-title="Residuos centrados en 0" data-sec="Algoritmo y validación" data-who="Integrante 3">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Calidad del ajuste · residuos</span><span class="num">14</span></div>
     <div class="body">
@@ -477,8 +458,7 @@
   <p class="explica"><b>Residuo eᵢ = yᵢ − (a*·xᵢ + b*)</b>: cuánto falló la recta en cada ensayo. Su promedio es 0 porque ∂S/∂b = 0. El abanico (más dispersión a más ángulo) se llama <b>heterocedasticidad</b>.</p>
 </section>
 
-<!-- ========================= 15 · DOBLE R<sup>2</sup> ========================= -->
-<section class="slide" data-title="Dos R² con la misma recta" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
+<section class="slide" data-p="Slide 21: qué es cada cosa" data-title="Dos R² con la misma recta" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Coeficiente de determinación</span><span class="num">15</span></div>
     <div class="body">
@@ -495,8 +475,7 @@
   <p class="explica"><b>R² = 1 − S mín / SST</b>: qué parte de la variación explica la recta (1 = todo, 0 = nada). <b>SST</b> = error de decir siempre el promedio. Con solo el ángulo, lo máximo posible es ≈ 0.097.</p>
 </section>
 
-<!-- ========================= 16 · 16 DE 17 ========================= -->
-<section class="slide" data-title="16 de 17 personas" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
+<section class="slide" data-p="Slide 22: qué es cada cosa" data-title="16 de 17 personas" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Pendiente individual de cada participante</span><span class="num">16</span></div>
     <div class="body">
@@ -513,8 +492,7 @@
   <p class="explica">Cada barra es la pendiente <b>aₚ</b> de una persona, con sus 35 ensayos. Si no hubiera efecto, cada una sería como una moneda: que 16 de 17 salgan positivas tiene probabilidad <b>0.00027</b> (prueba de signos).</p>
 </section>
 
-<!-- ========================= 17 · DESCOMPOSICIÓN ========================= -->
-<section class="slide" data-title="El error en dos piezas" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
+<section class="slide" data-p="Slide 23: qué es cada cosa" data-title="El error en dos piezas" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Descomposición ortogonal de S mín</span><span class="num">17</span></div>
     <div class="body" style="justify-content:center">
@@ -530,8 +508,7 @@
   <p class="explica"><b>SS<sub>intra</sub></b> = cuánto se alejan los tiempos del promedio de su propio ángulo; no depende de a ni b. <b>85</b> = ensayos por ángulo. Por eso la recta de los 595 ensayos es la misma que la de los 7 promedios.</p>
 </section>
 
-<!-- ========================= 18 · ANÁLISIS A–D ========================= -->
-<section class="slide" data-title="Análisis adicional A–D" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
+<section class="slide" data-p="Slide 24: qué es cada cosa" data-title="Análisis adicional A–D" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Análisis adicional</span><span class="num">18</span></div>
     <div class="body" style="justify-content:center">
@@ -547,8 +524,7 @@
   </div>
 </section>
 
-<!-- ========================= 19 · ROBUSTEZ ========================= -->
-<section class="slide" data-title="Robustez en dos imágenes" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
+<section class="slide" data-p="Slide 25: qué es cada cosa" data-title="Robustez en dos imágenes" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Opciones B, C y D</span><span class="num">19</span></div>
     <div class="body">
@@ -562,8 +538,7 @@
   </div>
 </section>
 
-<!-- ========================= 20 · TRANSPARENCIA ========================= -->
-<section class="slide" data-title="Transparencia sobre la muestra" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
+<section class="slide" data-p="Slide 26: qué es cada cosa" data-title="Transparencia sobre la muestra" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Honestidad con los datos</span><span class="num">20</span></div>
     <div class="body" style="justify-content:center">
@@ -589,8 +564,7 @@
   </div>
 </section>
 
-<!-- ========================= 21 · CEREBRO VS COMPUTADOR ========================= -->
-<section class="slide" data-title="Cerebro vs. computador" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
+<section class="slide" data-p="Slide 27: qué es cada cosa" data-title="Cerebro vs. computador" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Mismo problema, dos estrategias</span><span class="num">21</span></div>
     <div class="body">
@@ -607,8 +581,7 @@
   </div>
 </section>
 
-<!-- ========================= 22 · DEMO ========================= -->
-<section class="slide" data-title="Demo: el laboratorio 3D" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
+<section class="slide" data-p="Slide 28: qué es cada cosa" data-title="Demo: el laboratorio 3D" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">figuras/superficie_interactiva.html · sin internet</span><span class="num">22</span></div>
     <div class="body" style="justify-content:center;align-items:center;text-align:center">
@@ -624,8 +597,7 @@
   </div>
 </section>
 
-<!-- ========================= 23 · CONCLUSIONES ========================= -->
-<section class="slide" data-title="Conclusiones" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
+<section class="slide" data-p="Slide 29: qué es cada cosa" data-title="Conclusiones" data-sec="R², robustez y conclusiones" data-who="Integrante 4">
   <div class="win">
     <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Conclusiones</span><span class="num">23</span></div>
     <div class="body" style="justify-content:center">
@@ -640,8 +612,7 @@
   </div>
 </section>
 
-<!-- ========================= 24 · GRACIAS ========================= -->
-<section class="slide" data-title="Gracias · preguntas" data-sec="Cierre" data-who="Todos">
+<section class="slide" data-p="Slide 30: qué es cada cosa" data-title="Gracias · preguntas" data-sec="Cierre" data-who="Todos">
   <div class="cover" style="grid-template-columns:1fr;text-align:center;justify-items:center">
     <div class="stack" style="align-items:center">
       <span class="eyebrow r d1">NeuroCode · Cálculo Multivariable</span>
@@ -652,6 +623,575 @@
       <p class="cap r d6" style="max-width:70ch">Shepard, R. N., &amp; Metzler, J. (1971). Mental rotation of three-dimensional objects. <i>Science, 171</i>(3972), 701–703.</p>
     </div>
   </div>
+</section>
+
+<section class="slide" data-title="Anexo: el cálculo paso a paso" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · para responder preguntas</span><span class="num">A</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Anexo</span><h2>El cálculo, <em>paso a paso</em></h2></div>
+      <div class="cards r d2 idx-grid"><button type="button" class="card glass jump" data-go-title="Slide 1: qué es cada cosa"><span class="tag">Slide 1</span><p>NeuroCode</p></button><button type="button" class="card glass jump" data-go-title="Slide 2: qué es cada cosa"><span class="tag">Slide 2</span><p>Un experimento real</p></button><button type="button" class="card glass jump" data-go-title="Slide 3: qué es cada cosa"><span class="tag">Slide 3</span><p>Cómo medimos el tiempo</p></button><button type="button" class="card glass jump" data-go-title="Slide 4: qué es cada cosa"><span class="tag">Slide 4</span><p>El tiempo sube con el ángulo</p></button><button type="button" class="card glass jump" data-go-title="Slide 5: qué es cada cosa"><span class="tag">Slide 5</span><p>Un punto (a, b) es una recta</p></button><button type="button" class="card glass jump" data-go-title="Slide 6: qué es cada cosa"><span class="tag">Slide 6</span><p>Medimos el error: S(a, b)</p></button><button type="button" class="card glass jump" data-go-title="Slide 7: qué es cada cosa"><span class="tag">Slide 7</span><p>Mínimo ⇒ ∇S = 0</p></button><button type="button" class="card glass jump" data-go-title="Slide 8: qué es cada cosa"><span class="tag">Slide 8</span><p>Qué significan a* y b*</p></button><button type="button" class="card glass jump" data-go-title="Slide 9: qué es cada cosa"><span class="tag">Slide 9</span><p>El Hessiano confirma el mínimo</p></button><button type="button" class="card glass jump" data-go-title="Slide 10: qué es cada cosa"><span class="tag">Slide 10</span><p>Un valle con un solo fondo</p></button><button type="button" class="card glass jump" data-go-title="Slide 11: qué es cada cosa"><span class="tag">Slide 11</span><p>¿Por qué las elipses se inclinan?</p></button><button type="button" class="card glass jump" data-go-title="Slide 12: qué es cada cosa"><span class="tag">Slide 12</span><p>Cada corte es una parábola</p></button><button type="button" class="card glass jump" data-go-title="Slide 13: qué es cada cosa"><span class="tag">Slide 13</span><p>El código replica el cálculo</p></button><button type="button" class="card glass jump" data-go-title="Slide 14: qué es cada cosa"><span class="tag">Slide 14</span><p>Diagrama de flujo</p></button><button type="button" class="card glass jump" data-go-title="Slide 15: qué es cada cosa"><span class="tag">Slide 15</span><p>Pseudocódigo</p></button><button type="button" class="card glass jump" data-go-title="Slide 16: qué es cada cosa"><span class="tag">Slide 16</span><p>Código: fit()</p></button><button type="button" class="card glass jump" data-go-title="Slide 17: qué es cada cosa"><span class="tag">Slide 17</span><p>Código: S, ∇S, H y R²</p></button><button type="button" class="card glass jump" data-go-title="Slide 18: qué es cada cosa"><span class="tag">Slide 18</span><p>Algoritmo de descenso por gradiente</p></button><button type="button" class="card glass jump" data-go-title="Slide 19: qué es cada cosa"><span class="tag">Slide 19</span><p>Tres vías, mismo punto</p></button><button type="button" class="card glass jump" data-go-title="Slide 20: qué es cada cosa"><span class="tag">Slide 20</span><p>Residuos centrados en 0</p></button><button type="button" class="card glass jump" data-go-title="Slide 21: qué es cada cosa"><span class="tag">Slide 21</span><p>Dos R² con la misma recta</p></button><button type="button" class="card glass jump" data-go-title="Slide 22: qué es cada cosa"><span class="tag">Slide 22</span><p>16 de 17 personas</p></button><button type="button" class="card glass jump" data-go-title="Slide 23: qué es cada cosa"><span class="tag">Slide 23</span><p>El error en dos piezas</p></button><button type="button" class="card glass jump" data-go-title="Slide 24: qué es cada cosa"><span class="tag">Slide 24</span><p>Análisis adicional A–D</p></button><button type="button" class="card glass jump" data-go-title="Slide 25: qué es cada cosa"><span class="tag">Slide 25</span><p>Robustez en dos imágenes</p></button><button type="button" class="card glass jump" data-go-title="Slide 26: qué es cada cosa"><span class="tag">Slide 26</span><p>Transparencia sobre la muestra</p></button><button type="button" class="card glass jump" data-go-title="Slide 27: qué es cada cosa"><span class="tag">Slide 27</span><p>Cerebro vs. computador</p></button><button type="button" class="card glass jump" data-go-title="Slide 28: qué es cada cosa"><span class="tag">Slide 28</span><p>Demo: el laboratorio 3D</p></button><button type="button" class="card glass jump" data-go-title="Slide 29: qué es cada cosa"><span class="tag">Slide 29</span><p>Conclusiones</p></button><button type="button" class="card glass jump" data-go-title="Slide 30: qué es cada cosa"><span class="tag">Slide 30</span><p>Gracias · preguntas</p></button><button type="button" class="card glass jump" data-go-title="La tabla de trabajo: 7 medias"><span class="tag">Paso a paso 1</span><p>La tabla de trabajo: 7 medias</p></button><button type="button" class="card glass jump" data-go-title="S es un polinomio de grado 2"><span class="tag">Paso a paso 2</span><p>S es un polinomio de grado 2</p></button><button type="button" class="card glass jump" data-go-title="∂S/∂a paso a paso"><span class="tag">Paso a paso 3</span><p>∂S/∂a paso a paso</p></button><button type="button" class="card glass jump" data-go-title="∂S/∂b paso a paso"><span class="tag">Paso a paso 4</span><p>∂S/∂b paso a paso</p></button><button type="button" class="card glass jump" data-go-title="Despejamos a* y b*"><span class="tag">Paso a paso 5</span><p>Despejamos a* y b*</p></button><button type="button" class="card glass jump" data-go-title="De dónde sale cada valor"><span class="tag">Paso a paso 6</span><p>De dónde sale cada valor</p></button><button type="button" class="card glass jump" data-go-title="Con nuestros números"><span class="tag">Paso a paso 7</span><p>Con nuestros números</p></button><button type="button" class="card glass jump" data-go-title="Comprobamos ∇S(a*, b*) = 0"><span class="tag">Paso a paso 8</span><p>Comprobamos ∇S(a*, b*) = 0</p></button><button type="button" class="card glass jump" data-go-title="Segundas derivadas, una por una"><span class="tag">Paso a paso 9</span><p>Segundas derivadas, una por una</p></button><button type="button" class="card glass jump" data-go-title="Valores propios a mano"><span class="tag">Paso a paso 10</span><p>Valores propios a mano</p></button><button type="button" class="card glass jump" data-go-title="RMSE, R² y prueba t"><span class="tag">Paso a paso 11</span><p>RMSE, R² y prueba t</p></button></div>
+    </div>
+  </div>
+  </div>
+  <p class="explica">Respaldo para las preguntas del profe. En cada slide, el botón <b>P</b> (o la tecla P) abre la página que explica qué es cada cosa de esa slide; <b>← Volver</b> (o P otra vez) regresa. Toca una tarjeta para ir.</p>
+</section>
+
+<section class="slide" data-title="Slide 1: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">1</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 1: <em>NeuroCode</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">NeuroCode</span><p>El nombre del proyecto: medimos a qué velocidad el cerebro gira una imagen.</p></div><div class="card glass qa"><span class="tag">Rotación mental</span><p>Girar una imagen en la cabeza para compararla. Lo describieron Shepard y Metzler en 1971.</p></div><div class="card glass qa"><span class="tag">Mínimos cuadrados</span><p>El método para encontrar la recta que menos se equivoca: la que hace mínima la suma de los errores al cuadrado.</p></div><div class="card glass qa"><span class="tag">¿Por qué Cálculo Multivariable?</span><p>Porque el error depende de dos variables, a y b. Para encontrar su mínimo usamos derivadas parciales, gradiente y Hessiano.</p></div><div class="card glass qa"><span class="tag">¿Cuál es la pregunta del proyecto?</span><p>¿Cuántos milisegundos más tarda el cerebro por cada grado que tiene que girar una letra?</p></div><div class="card glass qa"><span class="tag">¿Cuál es la respuesta?</span><p>t = 683 + 2.75·θ ms: cada grado cuesta 2.75 ms, unos 364 grados por segundo.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 2: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">2</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 2: <em>Un experimento real</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Las R de la derecha</span><p>Arriba, R normales (tecla F); abajo, R en espejo (tecla J). Cada columna es un ángulo: 0°, 30°, …, 180°.</p></div><div class="card glass qa"><span class="tag">¿Por qué en espejo?</span><p>Para obligar a girarla: solo poniéndola derecha se sabe si es la letra normal o su reflejo.</p></div><div class="card glass qa"><span class="tag">17 · 7 · 595</span><p>17 personas, 7 ángulos y 595 ensayos: 17 × 7 × 5 aciertos por ángulo.</p></div><div class="card glass qa"><span class="tag">x</span><p>El ángulo de la R, en grados. Es la variable que controlamos.</p></div><div class="card glass qa"><span class="tag">y</span><p>El tiempo de respuesta, en milisegundos. Es la variable que medimos.</p></div><div class="card glass qa"><span class="tag">¿Por qué solo aciertos?</span><p>Si se equivocó, no sabemos si giró la letra o adivinó: ese tiempo no mide la rotación.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 3: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">3</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 3: <em>Cómo medimos el tiempo</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Fijación</span><p>Una cruz durante 500 ms, para que la persona mire al centro antes de que aparezca la R.</p></div><div class="card glass qa"><span class="tag">t₀ = performance.now()</span><p>El reloj del navegador marca el instante en que la R ya está dibujada. Mide con precisión menor a 1 ms.</p></div><div class="card glass qa"><span class="tag">y = ahora − t₀</span><p>El tiempo de respuesta: el momento en que presiona la tecla menos t₀.</p></div><div class="card glass qa"><span class="tag">Filtro</span><p>Menos de 150 ms es anticipación; más de 7 s, distracción; una respuesta equivocada tampoco cuenta.</p></div><div class="card glass qa"><span class="tag">Se repite</span><p>El ensayo inválido vuelve a la cola en un lugar al azar, hasta tener 5 aciertos por ángulo.</p></div><div class="card glass qa"><span class="tag">Balanceado (85 por ángulo)</span><p>Cada persona tiene 35 filas (5 × 7). Así cada ángulo tiene 85 datos y se puede calcular con 7 promedios.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="La tabla de trabajo: 7 medias">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 4: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">4</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 4: <em>El tiempo sube con el ángulo</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Ejes</span><p>Horizontal: el ángulo de la R (0° a 180°). Vertical: el tiempo de respuesta en ms.</p></div><div class="card glass qa"><span class="tag">Puntos de colores</span><p>Cada punto es un ensayo; el color dice qué persona fue (P01 a P17).</p></div><div class="card glass qa"><span class="tag">Puntos negros con número</span><p>El promedio de los 85 tiempos de cada ángulo: 719 ms a 0° … 1169 ms a 180°.</p></div><div class="card glass qa"><span class="tag">Línea roja</span><p>La recta ajustada, ŷ = 2.7467·x + 683.12. ŷ («y gorro») es el tiempo que predice.</p></div><div class="card glass qa"><span class="tag">«9 ensayos &gt; 2500 ms no se ven»</span><p>El eje se cortó para que se vea mejor, pero esos datos sí entran en el cálculo.</p></div><div class="card glass qa"><span class="tag">¿Por qué tanta dispersión?</span><p>Hay personas más rápidas y más lentas, y la misma persona varía de un intento a otro.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="La tabla de trabajo: 7 medias">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 5: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">5</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 5: <em>Un punto (a, b) es una recta</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Mapa de la izquierda</span><p>Cada punto del mapa es una recta: a va a lo ancho, b a lo alto. El color es su error S; más oscuro = menos error.</p></div><div class="card glass qa"><span class="tag">Anillos del mapa</span><p>Curvas de nivel: rectas con el mismo error. Son elipses alrededor del mínimo.</p></div><div class="card glass qa"><span class="tag">Punto rojo · puntos grises · punto azul</span><p>Rojo = el óptimo (a*, b*). Grises = candidatas 1, 2 y 3. Azul con anillo = la recta que estás mirando.</p></div><div class="card glass qa"><span class="tag">Gráfica de la derecha</span><p>La recta elegida sobre los 7 promedios. Las líneas rojas verticales son los residuos: cuánto falla en cada ángulo.</p></div><div class="card glass qa"><span class="tag">Tarjetas de arriba</span><p>La pendiente a, el intercepto b, su error S y cuánto por ciento está por encima del mínimo.</p></div><div class="card glass qa"><span class="tag">¿Qué son a y b?</span><p>a = pendiente: ms extra por cada grado. b = intercepto: tiempo que predice a 0°. Juntos definen una recta.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="S es un polinomio de grado 2">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 6: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">6</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 6: <em>Medimos el error: S(a, b)</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">S(a, b)</span><p>La función de error (de costo u objetivo): la suma de los errores al cuadrado de una recta.</p></div><div class="card glass qa"><span class="tag">Σ con i = 1 a 595</span><p>Sumar el término de adentro para cada uno de los 595 ensayos.</p></div><div class="card glass qa"><span class="tag">yᵢ − (a·xᵢ + b)</span><p>El residuo: lo medido menos lo que predice la recta.</p></div><div class="card glass qa"><span class="tag">01 · 02 · 03</span><p>Por qué al cuadrado: los + y − no se cancelan, castiga los errores grandes y S queda derivable.</p></div><div class="card glass qa"><span class="tag">Gráfica</span><p>Recta óptima (negra) y tres rectas peores. Su error es 3.6 %, 2.7 % y 12.7 % mayor que el mínimo.</p></div><div class="card glass qa"><span class="tag">Puntos con barras</span><p>Los 7 promedios por ángulo; la barra es su error estándar (cuánto podría variar el promedio).</p></div></div>
+      <button type="button" class="pasolink" data-go-title="S es un polinomio de grado 2">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 7: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">7</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 7: <em>Mínimo ⇒ ∇S = 0</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">∂S/∂a</span><p>Derivada parcial respecto a a: cuánto cambia el error si muevo solo la pendiente (b queda fija).</p></div><div class="card glass qa"><span class="tag">∂S/∂b</span><p>Derivada parcial respecto a b: cuánto cambia el error si muevo solo el intercepto (a queda fija).</p></div><div class="card glass qa"><span class="tag">−2 Σ …</span><p>Lo que sale de la regla de la cadena: la derivada de (algo)² es 2·(algo)·(derivada del algo).</p></div><div class="card glass qa"><span class="tag">∇S = 0</span><p>Las dos parciales valen 0: la tangente es horizontal. Es la condición de todo punto crítico; no es «para despejar».</p></div><div class="card glass qa"><span class="tag">El sistema entre llaves</span><p>Las ecuaciones normales: dos ecuaciones lineales con dos incógnitas, a y b.</p></div><div class="card glass qa"><span class="tag">«Plano tangente horizontal»</span><p>En el mínimo, el plano que toca la superficie queda completamente plano.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="∂S/∂a paso a paso">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 8: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">8</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 8: <em>Qué significan a* y b*</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">2.7467</span><p>a*: cada grado extra cuesta 2.75 ms. Es el costo de girar.</p></div><div class="card glass qa"><span class="tag">683.12</span><p>b*: el tiempo a 0°, sin girar: ver, decidir y presionar.</p></div><div class="card glass qa"><span class="tag">364</span><p>1000 ÷ 2.75: los grados que gira la mente en un segundo.</p></div><div class="card glass qa"><span class="tag">La fracción de a*</span><p>a* = (nΣxy − ΣxΣy) / (nΣx² − (Σx)²) = 3 500 688 450 / 1 274 490 000.</p></div><div class="card glass qa"><span class="tag">La fila de sumas</span><p>n = 595, Σx = 53 550, Σx² = 6 961 500, Σy = 553 544.9, Σxy = 55 702 551: salen de los 17 CSV.</p></div><div class="card glass qa"><span class="tag">El deslizador con la R</span><p>Giras la R a θ y la recta predice ŷ. A 90° predice 930.3 ms; lo medido fue 954.6 ms.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="Con nuestros números">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 9: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">9</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 9: <em>El Hessiano confirma el mínimo</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">H</span><p>La matriz Hessiana: las segundas derivadas. Mide cómo se curva la superficie.</p></div><div class="card glass qa"><span class="tag">13 923 000 · 107 100 · 1 190</span><p>S_aa = 2Σx², S_ab = 2Σx y S_bb = 2n con nuestros datos.</p></div><div class="card glass qa"><span class="tag">det H &gt; 0 y S_aa &gt; 0</span><p>El criterio de la segunda derivada: los dos positivos ⇒ mínimo (no máximo ni silla).</p></div><div class="card glass qa"><span class="tag">Valores propios &gt; 0</span><p>366.1 y 1.39 × 10⁷: las curvaturas principales. Ambas positivas ⇒ superficie convexa (una taza).</p></div><div class="card glass qa"><span class="tag">H es constante</span><p>No depende de a ni b: la curvatura es igual en todo el plano. Por eso hay un solo mínimo y es global.</p></div><div class="card glass qa"><span class="tag">¿Local o global?</span><p>Local = el más bajo de su alrededor; global = el más bajo de todos. El nuestro es las dos cosas.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="Segundas derivadas, una por una">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 10: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">10</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 10: <em>Un valle con un solo fondo</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Ejes</span><p>En el piso: a (ms por grado) y b (ms). La altura es el error S(a, b), en unidades de 10⁸ ms².</p></div><div class="card glass qa"><span class="tag">La malla</span><p>S calculado en una cuadrícula de 140 × 140 rectas (a, b) alrededor del óptimo, con los 595 datos.</p></div><div class="card glass qa"><span class="tag">Punto del fondo</span><p>El mínimo (a*, b*) = (2.7467, 683.12): ahí el gradiente vale 0.</p></div><div class="card glass qa"><span class="tag">Curvas morada y verde</span><p>Trazas: cortes de la superficie fijando b = b* (S(a, b*)) o a = a* (S(a*, b)).</p></div><div class="card glass qa"><span class="tag">Elipses blancas</span><p>Curvas de nivel: rectas con el mismo error.</p></div><div class="card glass qa"><span class="tag">¿Qué superficie es?</span><p>Un paraboloide elíptico convexo: S es de grado 2 en a y b.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="Valores propios a mano">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 11: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">11</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 11: <em>¿Por qué las elipses se inclinan?</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">∂²S/∂a∂b = 2Σx = 107 100</span><p>La derivada cruzada. Como no es 0, a y b están acoplados.</p></div><div class="card glass qa"><span class="tag">«a y b están acoplados»</span><p>Si subes la pendiente, tienes que bajar el intercepto para seguir pasando por el centro de los datos.</p></div><div class="card glass qa"><span class="tag">x − 90°</span><p>Medir el ángulo desde 90°. Así Σ(x − 90) = 0 y la derivada cruzada se vuelve 0.</p></div><div class="card glass qa"><span class="tag">La gráfica</span><p>Curvas de nivel sobre el plano (a, b), inclinadas; el punto rojo es el mínimo.</p></div><div class="card glass qa"><span class="tag">Antes / después</span><p>Las elipses inclinadas (x en grados) y derechas (x centrada). La pendiente no cambia.</p></div><div class="card glass qa"><span class="tag">ȳ = 930.33 ms</span><p>Al centrar, el intercepto pasa a ser el tiempo promedio, el de 90°.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 12: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">12</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 12: <em>Cada corte es una parábola</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Gráfica A</span><p>S con b fijo. Eje horizontal: la pendiente a; eje vertical: el error en 10⁸ ms².</p></div><div class="card glass qa"><span class="tag">Línea roja gruesa</span><p>La traza óptima (b = b*): una parábola con vértice justo en a* = 2.75.</p></div><div class="card glass qa"><span class="tag">Líneas punteadas</span><p>Secciones con b = b* ± 150 y ± 300: parábolas más altas, con el vértice corrido.</p></div><div class="card glass qa"><span class="tag">Gráfica B</span><p>Lo mismo fijando a. Eje horizontal: el intercepto b; vértice en b* = 683.1.</p></div><div class="card glass qa"><span class="tag">«∂S/∂a = 0» en el vértice</span><p>En el vértice la tangente es horizontal: pendiente 0.</p></div><div class="card glass qa"><span class="tag">¿Por qué abren hacia arriba?</span><p>S es de grado 2 y convexa: cada corte es una parábola con un mínimo.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 13: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">13</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 13: <em>El código replica el cálculo</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Las 8 tarjetas</span><p>Los pasos del programa, en orden. Cada uno repite un paso del cálculo a mano.</p></div><div class="card glass qa"><span class="tag">Cargar 17 CSV</span><p>Lee un archivo por persona: 595 ensayos.</p></div><div class="card glass qa"><span class="tag">Sumatorias</span><p>n, Σx, Σy, Σx² y Σxy: lo único que necesitan las fórmulas.</p></div><div class="card glass qa"><span class="tag">a*, b*</span><p>Resuelve el sistema normal 2 × 2 con la fórmula despejada.</p></div><div class="card glass qa"><span class="tag">¿det H &gt; 0 y S_aa &gt; 0?</span><p>El criterio de la segunda derivada para confirmar que es un mínimo.</p></div><div class="card glass qa"><span class="tag">Verificar</span><p>NumPy y SciPy solo comprueban al final; el ajuste es nuestro.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="De dónde sale cada valor">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 14: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">14</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 14: <em>Diagrama de flujo</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Formas del diagrama</span><p>Óvalo = inicio o fin; paralelogramo = leer datos; rectángulo = un proceso; rombo = una decisión.</p></div><div class="card glass qa"><span class="tag">load(), fit(), hessian(), metrics()</span><p>Las funciones de ajuste.py: leer, calcular a* y b*, armar H, calcular RMSE y R².</p></div><div class="card glass qa"><span class="tag">El rombo</span><p>El criterio det H &gt; 0 y S_aa &gt; 0.</p></div><div class="card glass qa"><span class="tag">Rama «sí»</span><p>Mínimo global → residuos → verificar → figuras y laboratorio.</p></div><div class="card glass qa"><span class="tag">Rama «no» (punteada)</span><p>Solo pasaría si todos los ángulos fueran iguales (det H = 0).</p></div><div class="card glass qa"><span class="tag">Figuras y laboratorio</span><p>Las imágenes PNG 01–12 y la página HTML 3D.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 15: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">15</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 15: <em>Pseudocódigo</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">ENTRADA / SALIDA</span><p>Entra la lista de pares (xᵢ, yᵢ); salen a*, b*, S mín, H, RMSE y R².</p></div><div class="card glass qa"><span class="tag">Líneas 4–8</span><p>Un solo recorrido acumula las cinco sumas: Sx = Σx, Sy = Σy, Sxx = Σx², Sxy = Σxy.</p></div><div class="card glass qa"><span class="tag">D0</span><p>El denominador n·Σx² − (Σx)². Si fuera 0 (todos los x iguales) da error.</p></div><div class="card glass qa"><span class="tag">Líneas 11–12</span><p>Las fórmulas de a* y b*.</p></div><div class="card glass qa"><span class="tag">O(n)</span><p>El tiempo crece en proporción al número de datos.</p></div><div class="card glass qa"><span class="tag">Sin iteraciones</span><p>La fórmula de ∇S = 0 da el mínimo exacto en un paso.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="De dónde sale cada valor">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 16: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">16</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 16: <em>Código: fit()</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">n = len(x)</span><p>El número de ensayos: 595.</p></div><div class="card glass qa"><span class="tag">x.sum(), y.sum()</span><p>Σx y Σy. x e y son vectores de 595 números.</p></div><div class="card glass qa"><span class="tag">(x * x).sum(), (x * y).sum()</span><p>Σx² y Σxy: el * multiplica elemento a elemento y .sum() suma.</p></div><div class="card glass qa"><span class="tag">d = n*sxx − sx**2</span><p>D₀. Ojo: sx**2 = (Σx)², el total al cuadrado; sxx = Σx², la suma de los cuadrados.</p></div><div class="card glass qa"><span class="tag">a = …, b = …</span><p>a* y b*, idénticas a las fórmulas despejadas a mano.</p></div><div class="card glass qa"><span class="tag">Números rojos</span><p>El número de línea del código y la fórmula que le corresponde.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="Despejamos a* y b*">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 17: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">17</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 17: <em>Código: S, ∇S, H y R²</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">S(a, b, x, y)</span><p>Calcula el error total, igual que la fórmula.</p></div><div class="card glass qa"><span class="tag">grad_S</span><p>e = residuos; devuelve las dos parciales (−2Σx·e, −2Σe). En (a*, b*) da ≈ 0.</p></div><div class="card glass qa"><span class="tag">hessian(x)</span><p>Arma la matriz 2 × 2. Solo recibe x: el Hessiano no depende de a ni b.</p></div><div class="card glass qa"><span class="tag">metrics</span><p>sse = S mín, sst = variación total. Devuelve residuos, RMSE y R².</p></div><div class="card glass qa"><span class="tag">RMSE = √(S mín / n)</span><p>El error típico de un ensayo: 512 ms.</p></div><div class="card glass qa"><span class="tag">R² = 1 − S mín / SST</span><p>Qué parte de la variación explica la recta.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="Comprobamos ∇S(a*, b*) = 0">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 18: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">18</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 18: <em>Algoritmo de descenso por gradiente</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">g_a, g_b</span><p>Las dos derivadas parciales (el gradiente), escritas con las sumas.</p></div><div class="card glass qa"><span class="tag">η</span><p>El tamaño del paso.</p></div><div class="card glass qa"><span class="tag">a ← a − η·g_a</span><p>Método puro: un paso en contra del gradiente, porque el gradiente apunta cuesta arriba.</p></div><div class="card glass qa"><span class="tag">Escalado</span><p>Divide cada componente entre su curvatura (S_aa, S_bb): unos 250 pasos.</p></div><div class="card glass qa"><span class="tag">Puro: η &lt; 2/λ₂ ≈ 1.4 × 10⁻⁷</span><p>Con un paso tan chico, la dirección suave casi no avanza: zigzag.</p></div><div class="card glass qa"><span class="tag">Centrado x − 90°</span><p>H queda diagonal: unos 39 pasos.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="Valores propios a mano">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 19: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">19</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 19: <em>Tres vías, mismo punto</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Manual</span><p>El cálculo con calculadora a partir de la tabla de sumas.</p></div><div class="card glass qa"><span class="tag">Código propio</span><p>ajuste.py, sin funciones de regresión.</p></div><div class="card glass qa"><span class="tag">polyfit · linregress</span><p>Funciones de NumPy y SciPy que ajustan la misma recta.</p></div><div class="card glass qa"><span class="tag">Diferencia ≈ 10⁻¹⁴</span><p>0.00000000000001: es redondeo del computador, no un error.</p></div><div class="card glass qa"><span class="tag">S mín</span><p>156 163 296 ms² en las tres vías.</p></div><div class="card glass qa"><span class="tag">Ruido de punto flotante</span><p>El computador guarda unas 16 cifras y cada camino redondea distinto la última.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="Con nuestros números">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 20: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">20</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 20: <em>Residuos centrados en 0</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Gráfica A · ejes</span><p>Horizontal: el ángulo; vertical: el residuo eᵢ en ms. Cada punto azul es un ensayo.</p></div><div class="card glass qa"><span class="tag">Línea en 0 y línea roja</span><p>La negra es el 0; la roja, el promedio de los residuos en cada ángulo: casi 0.</p></div><div class="card glass qa"><span class="tag">Banda celeste</span><p>±1 desviación estándar: se ensancha con el ángulo (heterocedasticidad).</p></div><div class="card glass qa"><span class="tag">Líneas rojas punteadas</span><p>±2 RMSE (±1025 ms): fuera de ahí están los datos raros.</p></div><div class="card glass qa"><span class="tag">Recuadro</span><p>El atípico más grande: P09 a 150°, residuo +5015.7 ms (fila 262).</p></div><div class="card glass qa"><span class="tag">Gráfica B</span><p>Histograma de residuos con la curva normal teórica; cola a la derecha por los tiempos largos.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="RMSE, R² y prueba t">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 21: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">21</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 21: <em>Dos R² con la misma recta</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Gráfica A</span><p>La variación total de los tiempos: 90.3 % ocurre dentro de cada ángulo (gris), 9.4 % la explica la recta (rojo).</p></div><div class="card glass qa"><span class="tag">Gráfica B</span><p>Los 7 promedios con su barra de error y la misma recta.</p></div><div class="card glass qa"><span class="tag">0.0938</span><p>R² con los 595 ensayos.</p></div><div class="card glass qa"><span class="tag">0.9685</span><p>R² con los 7 promedios: la misma recta.</p></div><div class="card glass qa"><span class="tag">R² = 1 − S / SST</span><p>SST = el error de decir siempre el promedio. R² = 1 es todo; 0, nada.</p></div><div class="card glass qa"><span class="tag">¿R² bajo = modelo malo?</span><p>No: con solo el ángulo, lo máximo posible es ≈ 0.097.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="RMSE, R² y prueba t">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 22: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">22</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 22: <em>16 de 17 personas</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Cada barra</span><p>La pendiente aₚ de una persona, calculada con sus 35 ensayos (ms por grado).</p></div><div class="card glass qa"><span class="tag">Ejes</span><p>Horizontal: la pendiente; vertical: el participante, de mayor a menor.</p></div><div class="card glass qa"><span class="tag">Línea punteada</span><p>La pendiente global a* = 2.75. Es justo el promedio de las 17.</p></div><div class="card glass qa"><span class="tag">P01 = −0.08</span><p>La única persona sin efecto.</p></div><div class="card glass qa"><span class="tag">«test de signos p = 2.7e−04»</span><p>La probabilidad de que 16 de 17 salgan positivas por azar, como monedas: 0.00027.</p></div><div class="card glass qa"><span class="tag">«sin P09 · a* = 2.36»</span><p>Quitando a la persona de pendiente más alta, sigue positiva.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 23: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">23</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 23: <em>El error en dos piezas</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">La fórmula</span><p>S mín = 155 637 440 + 85 · S_medias(a*, b*) = 156 163 296.</p></div><div class="card glass qa"><span class="tag">Barra celeste (99.7 %)</span><p>El ruido dentro de cada ángulo. No depende de a ni b: ninguna recta lo puede bajar.</p></div><div class="card glass qa"><span class="tag">Pedacito rojo (0.3 %)</span><p>Lo que sí ajusta la recta: el error contra los 7 promedios.</p></div><div class="card glass qa"><span class="tag">85</span><p>Los ensayos de cada ángulo: 17 personas × 5.</p></div><div class="card glass qa"><span class="tag">«≡»</span><p>Minimizar con 595 ensayos es lo mismo que con los 7 promedios: da la misma recta.</p></div><div class="card glass qa"><span class="tag">Tiempo base por persona</span><p>18 variables (1 pendiente + 17 interceptos): misma a* = 2.7467 y R² = 0.38.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 24: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">24</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 24: <em>Análisis adicional A–D</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">A · Sensibilidad</span><p>Le sumamos a cada tiempo hasta ±25 ms al azar, 500 veces.</p></div><div class="card glass qa"><span class="tag">σ_a = 0.017</span><p>La desviación estándar de las 500 pendientes: solo 0.6 % de 2.75.</p></div><div class="card glass qa"><span class="tag">B · Atípicos</span><p>Sin el dato más extremo: 2.61. Sin todos los mayores a 3 s: 2.41.</p></div><div class="card glass qa"><span class="tag">C · Cuadrático</span><p>Una parábola en vez de la recta. ΔR² = +0.0003 es la mejora: nada.</p></div><div class="card glass qa"><span class="tag">D · Tamaño N</span><p>Sumamos personas una por una; desde unas 10, a* casi no cambia.</p></div><div class="card glass qa"><span class="tag">Franja de abajo</span><p>En las 4 pruebas la pendiente sigue positiva, entre 2.4 y 2.75.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 25: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">25</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 25: <em>Robustez en dos imágenes</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Gráfica izquierda</span><p>Los 7 promedios con 4 modelos: todos los datos, sin atípico, sin &gt; 3 s y cuadrático.</p></div><div class="card glass qa"><span class="tag">¿Por qué casi encima?</span><p>De 2.41 a 2.75 son unos 61 ms de diferencia a 180°, frente a unos 450 ms de subida.</p></div><div class="card glass qa"><span class="tag">Gráfica derecha · ejes</span><p>Horizontal: el número de personas N; vertical: a* calculada con las primeras N.</p></div><div class="card glass qa"><span class="tag">¿Por qué empieza cerca de 0?</span><p>La primera persona es P01, la única sin efecto.</p></div><div class="card glass qa"><span class="tag">Cerca de 2.75</span><p>Desde unas 9 o 10 personas la pendiente se queda estable.</p></div><div class="card glass qa"><span class="tag">¿Qué demuestra?</span><p>Que el resultado no depende de unos pocos datos ni de unas pocas personas.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 26: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">26</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 26: <em>Transparencia sobre la muestra</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">La tabla</span><p>Cada fila es una muestra distinta: cuántos ensayos tiene y qué pendiente da. La barra es a* en proporción.</p></div><div class="card glass qa"><span class="tag">525</span><p>Los 15 primeros × 35 ensayos: el protocolo original.</p></div><div class="card glass qa"><span class="tag">595</span><p>El modelo oficial: 17 personas con sesión completa.</p></div><div class="card glass qa"><span class="tag">875</span><p>Todo lo recolectado sin copias, incluso sesiones repetidas y distraídas.</p></div><div class="card glass qa"><span class="tag">Copias exactas</span><p>Archivos con el mismo inicio, fin y suma de tiempos: había 3 y se quitaron.</p></div><div class="card glass qa"><span class="tag">¿Manipularon los datos?</span><p>2 personas se sumaron después de ver su ajuste; por eso reportamos las tres versiones. Siempre a* &gt; 0.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 27: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">27</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 27: <em>Cerebro vs. computador</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">Gráfica · ejes</span><p>Horizontal: el ángulo θ; vertical: el tiempo en ms.</p></div><div class="card glass qa"><span class="tag">Línea roja y zona sombreada</span><p>El cerebro (medido): t = 683 + 2.75·θ. Lo sombreado es el costo de rotar.</p></div><div class="card glass qa"><span class="tag">Puntos negros con barras</span><p>Los promedios observados con su error estándar.</p></div><div class="card glass qa"><span class="tag">Línea azul punteada</span><p>El computador: tiempo constante. Es un esquema, no una medición.</p></div><div class="card glass qa"><span class="tag">R(θ)</span><p>La matriz de rotación [[cos θ, −sen θ], [sen θ, cos θ]] con la que un computador gira una imagen.</p></div><div class="card glass qa"><span class="tag">O(1) y 364 °/s</span><p>O(1): tarda lo mismo con cualquier ángulo. 364 °/s = 1000 ÷ 2.75.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 28: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">28</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 28: <em>Demo: el laboratorio 3D</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">01 · Arrastra</span><p>Mover el punto (a, b) del mapa cambia la recta al instante.</p></div><div class="card glass qa"><span class="tag">02 · −∇S</span><p>La flecha apunta cuesta abajo, al fondo, perpendicular a las elipses.</p></div><div class="card glass qa"><span class="tag">03 · Compara</span><p>Gradiente puro (zigzag), escalado (250 pasos) y centrado (39 pasos).</p></div><div class="card glass qa"><span class="tag">38 000</span><p>El cociente de curvaturas λ₂/λ₁: el valle es muy alargado.</p></div><div class="card glass qa"><span class="tag">x̃ = x − 90°</span><p>El ángulo centrado («x tilde»).</p></div><div class="card glass qa"><span class="tag">El botón</span><p>Abre figuras/superficie_interactiva.html; funciona sin internet.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="Valores propios a mano">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 29: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">29</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 29: <em>Conclusiones</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">y = 2.75x + 683</span><p>La recta final: 2.75 ms por grado y 683 ms de base.</p></div><div class="card glass qa"><span class="tag">∇S = 0 · H &gt; 0</span><p>El punto crítico y la prueba de que es el mínimo único y global.</p></div><div class="card glass qa"><span class="tag">0.0938 · 0.9685</span><p>El doble R²: misma recta, el ruido está dentro de cada ángulo.</p></div><div class="card glass qa"><span class="tag">17 personas, 16 con efecto</span><p>El límite: muestra pequeña de universitarios.</p></div><div class="card glass qa"><span class="tag">«Tendencia media»</span><p>El modelo describe el promedio, no a cada persona.</p></div><div class="card glass qa"><span class="tag">90 % y 97 %</span><p>90 % de la variación es ruido dentro de cada ángulo; con los 7 promedios la recta explica el 97 %.</p></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Slide 30: qué es cada cosa" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Anexo · qué es cada cosa</span><span class="num">30</span></div>
+    <div class="body" style="justify-content:center">
+      <div class="head r d1"><span class="eyebrow">Qué es cada cosa</span><h2>Slide 30: <em>Gracias · preguntas</em></h2></div>
+      <div class="cards qa-grid r d2"><div class="card glass qa"><span class="tag">∂S/∂a, ∂S/∂b</span><p>Las dos derivadas parciales que cualquiera del grupo puede deducir en el tablero.</p></div><div class="card glass qa"><span class="tag">El Hessiano</span><p>La matriz de segundas derivadas, que confirma el mínimo.</p></div><div class="card glass qa"><span class="tag">Shepard y Metzler (1971)</span><p>El artículo original de rotación mental, publicado en Science.</p></div><div class="card glass qa"><span class="tag">Si preguntan algo</span><p>Usen el botón P o el índice del anexo (tecla G).</p></div><div class="card glass qa"><span class="tag">Paso a paso</span><p>Todo el desarrollo, de la tabla de 7 medias a los valores propios, está en el anexo.</p></div><div class="card glass qa"><span class="tag">Panel de preguntas</span><p>El botón «?» o la tecla Q abre la lista de preguntas del profe con buscador.</p></div></div>
+      <button type="button" class="pasolink" data-go-title="Anexo: el cálculo paso a paso">Ver el paso a paso de las fórmulas →</button>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="La tabla de trabajo: 7 medias" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Tabla para el cálculo a mano</span><span class="num">A1</span></div>
+    <div class="body">
+      <div class="head r d1"><span class="eyebrow">Datos de trabajo</span><h2>Lo que se suma <em>a mano</em>: 7 filas</h2></div>
+      <div class="two wide-l r d2" style="align-items:center">
+        <div class="glass" style="padding:clamp(.4rem,1vw,1rem)">
+          <table class="t tight">
+            <thead><tr><th class="n">k</th><th class="n">x<sub>k</sub> (°)</th><th class="n">ȳ<sub>k</sub> (ms)</th><th class="n">x<sub>k</sub><sup>2</sup></th><th class="n">x<sub>k</sub>·ȳ<sub>k</sub></th></tr></thead>
+            <tbody>
+              <tr><td class="n">1</td><td class="n">0</td><td class="n">718.68</td><td class="n">0</td><td class="n">0.00</td></tr>
+              <tr><td class="n">2</td><td class="n">30</td><td class="n">751.74</td><td class="n">900</td><td class="n">22 552.09</td></tr>
+              <tr><td class="n">3</td><td class="n">60</td><td class="n">790.02</td><td class="n">3 600</td><td class="n">47 401.34</td></tr>
+              <tr><td class="n">4</td><td class="n">90</td><td class="n">954.60</td><td class="n">8 100</td><td class="n">85 913.79</td></tr>
+              <tr><td class="n">5</td><td class="n">120</td><td class="n">1 006.84</td><td class="n">14 400</td><td class="n">120 820.24</td></tr>
+              <tr><td class="n">6</td><td class="n">150</td><td class="n">1 121.30</td><td class="n">22 500</td><td class="n">168 194.65</td></tr>
+              <tr><td class="n">7</td><td class="n">180</td><td class="n">1 169.12</td><td class="n">32 400</td><td class="n">210 442.02</td></tr>
+            </tbody>
+            <tfoot><tr><td class="n">Σ</td><td class="n">630</td><td class="n">6 512.29</td><td class="n">81 900</td><td class="n">655 324.13</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="stack">
+          <div class="note">Cada <b>ȳ<sub>k</sub></b> es el promedio de los <b>85</b> aciertos a ese ángulo.</div>
+          <div class="note">Como todos los ángulos tienen 85 datos, las sumas de los 595 ensayos salen de multiplicar:<br><span class="mono">Σx = 85 · 630 = 53 550</span><br><span class="mono">Σx² = 85 · 81 900 = 6 961 500</span></div>
+          <div class="note warn">Con estas 7 filas se obtiene <b>exactamente</b> la misma recta que con los 595 ensayos (lo demostramos más adelante).</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="explica"><b>Paso 1 · los datos.</b> Cada fila es un ángulo <b>x</b>; <b>ȳ</b> es el promedio de sus 85 tiempos. <b>x²</b> y <b>x·ȳ</b> son las columnas que piden las fórmulas. La fila Σ son las sumas. Como todos los ángulos tienen 85 datos, las sumas de los 595 ensayos son 85 × estas.</p>
+</section>
+
+<section class="slide" data-title="S es un polinomio de grado 2" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Desarrollo del cuadrado</span><span class="num">A2</span></div>
+    <div class="body">
+      <div class="head r d1"><span class="eyebrow">Paso previo</span><h2>Abrimos el cuadrado: S es <em>cuadrática</em> en a y b</h2></div>
+      <div class="fx r d2"><span class="fx-t">Fórmula</span><span class="math sm">S(a, b) = <span class="sum"><b>Σ</b></span>(y<sub>i</sub> − a·x<sub>i</sub> − b)<sup>2</sup> &nbsp; y &nbsp; (p − q − r)<sup>2</sup> = p<sup>2</sup> + q<sup>2</sup> + r<sup>2</sup> − 2pq − 2pr + 2qr</span></div>
+      <ol class="steps r d2">
+        <li><span class="math sm">(<i>y<sub>i</sub></i> − <span class="p">a</span><i>x<sub>i</sub></i> − <span class="p">b</span>)<sup>2</sup> = <i>y<sub>i</sub></i><sup>2</sup> + <span class="p">a</span><sup>2</sup><i>x<sub>i</sub></i><sup>2</sup> + <span class="p">b</span><sup>2</sup> − 2<span class="p">a</span><i>x<sub>i</sub>y<sub>i</sub></i> − 2<span class="p">b</span><i>y<sub>i</sub></i> + 2<span class="p">ab</span><i>x<sub>i</sub></i></span><span class="why">(p − q − r)² con tres términos</span></li>
+        <li><span class="math sm">S = <span class="p">a</span><sup>2</sup>Σ<i>x</i><sup>2</sup> + 2<span class="p">ab</span>Σ<i>x</i> + <i>n</i><span class="p">b</span><sup>2</sup> − 2<span class="p">a</span>Σ<i>xy</i> − 2<span class="p">b</span>Σ<i>y</i> + Σ<i>y</i><sup>2</sup></span><span class="why">sumamos las 595 filas; Σb² = n·b²</span></li>
+        <li class="key"><span class="math sm">S = 6 961 500<span class="p">a</span><sup>2</sup> + 107 100<span class="p">ab</span> + 595<span class="p">b</span><sup>2</sup> − 111 405 102<span class="p">a</span> − 1 107 089.8<span class="p">b</span> + 687 301 826.87</span><span class="why">con nuestras sumas</span></li>
+      </ol>
+      <div class="row r d3" style="gap:1rem;flex-wrap:wrap">
+        <span class="chip">los datos ya son <b>constantes</b></span>
+        <span class="chip">las incógnitas son <b class="amber">a</b> y <b class="amber">b</b></span>
+        <span class="chip hot">grado 2 en (a, b) ⇒ la superficie es un paraboloide</span>
+      </div>
+    </div>
+  </div>
+  <p class="explica"><b>Paso 2 · abrir el cuadrado.</b> (y − ax − b)² tiene seis términos; al sumar las 595 filas cada uno se vuelve una suma (Σb² = n·b²). Los datos ya son números fijos: las incógnitas son <b>a</b> y <b>b</b>. Grado 2 en a y b ⇒ la gráfica es un <b>paraboloide</b> (una taza).</p>
+</section>
+
+<section class="slide" data-title="∂S/∂a paso a paso" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Regla de la cadena · b constante</span><span class="num">A3</span></div>
+    <div class="body">
+      <div class="head r d1"><span class="eyebrow">Derivada parcial</span><h2>Derivamos respecto de <em>a</em> (b queda fija)</h2></div>
+      <div class="fx r d2"><span class="fx-t">Fórmula</span><span class="math sm">Regla de la cadena: &nbsp; <span class="frac"><span>∂</span><span>∂a</span></span> u<sup>2</sup> = 2u · <span class="frac"><span>∂u</span><span>∂a</span></span>, &nbsp; con u = y<sub>i</sub> − a·x<sub>i</sub> − b</span></div>
+      <ol class="steps r d2">
+        <li><span class="math sm"><span class="frac"><span>∂</span><span>∂<span class="p">a</span></span></span>(<i>y<sub>i</sub></i> − <span class="p">a</span><i>x<sub>i</sub></i> − <span class="p">b</span>)<sup>2</sup> = 2(<i>y<sub>i</sub></i> − <span class="p">a</span><i>x<sub>i</sub></i> − <span class="p">b</span>) · <span class="frac"><span>∂</span><span>∂<span class="p">a</span></span></span>(<i>y<sub>i</sub></i> − <span class="p">a</span><i>x<sub>i</sub></i> − <span class="p">b</span>)</span><span class="why">regla de la cadena: (u²)' = 2u·u'</span></li>
+        <li><span class="math sm"><span class="frac"><span>∂</span><span>∂<span class="p">a</span></span></span>(<i>y<sub>i</sub></i> − <span class="p">a</span><i>x<sub>i</sub></i> − <span class="p">b</span>) = 0 − <i>x<sub>i</sub></i> − 0 = −<i>x<sub>i</sub></i></span><span class="why">y<sub>i</sub> y b son constantes</span></li>
+        <li><span class="math sm"><span class="frac"><span>∂S</span><span>∂<span class="p">a</span></span></span> = <span class="sum"><b>Σ</b></span>2(<i>y<sub>i</sub></i> − <span class="p">a</span><i>x<sub>i</sub></i> − <span class="p">b</span>)(−<i>x<sub>i</sub></i>) = −2<span class="sum"><b>Σ</b></span><i>x<sub>i</sub></i>(<i>y<sub>i</sub></i> − <span class="p">a</span><i>x<sub>i</sub></i> − <span class="p">b</span>)</span><span class="why">la derivada de una suma es la suma de derivadas</span></li>
+        <li class="key"><span class="math sm"><span class="frac"><span>∂S</span><span>∂<span class="p">a</span></span></span> = 2<span class="p">a</span>Σ<i>x</i><sup>2</sup> + 2<span class="p">b</span>Σ<i>x</i> − 2Σ<i>xy</i> = 13 923 000<span class="p">a</span> + 107 100<span class="p">b</span> − 111 405 102</span><span class="why">distribuimos; mismo resultado que derivar la expansión</span></li>
+      </ol>
+    </div>
+  </div>
+  <p class="explica"><b>Paso 3 · derivada respecto a a.</b> b se trata como constante. Regla de la cadena: (u²)′ = 2u·u′, con u = yᵢ − a·xᵢ − b y u′ = −xᵢ. Mide <b>cuánto cambia el error si muevo solo la pendiente</b>.</p>
+</section>
+
+<section class="slide" data-title="∂S/∂b paso a paso" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Regla de la cadena · a constante</span><span class="num">A4</span></div>
+    <div class="body">
+      <div class="head r d1"><span class="eyebrow">Derivada parcial</span><h2>Derivamos respecto de <em>b</em> (a queda fija)</h2></div>
+      <div class="fx r d2"><span class="fx-t">Fórmula</span><span class="math sm">Regla de la cadena: &nbsp; <span class="frac"><span>∂</span><span>∂b</span></span> u<sup>2</sup> = 2u · <span class="frac"><span>∂u</span><span>∂b</span></span>, &nbsp; con u = y<sub>i</sub> − a·x<sub>i</sub> − b</span></div>
+      <ol class="steps r d2">
+        <li><span class="math sm"><span class="frac"><span>∂</span><span>∂<span class="p">b</span></span></span>(<i>y<sub>i</sub></i> − <span class="p">a</span><i>x<sub>i</sub></i> − <span class="p">b</span>)<sup>2</sup> = 2(<i>y<sub>i</sub></i> − <span class="p">a</span><i>x<sub>i</sub></i> − <span class="p">b</span>) · (−1)</span><span class="why">la derivada interna de −b es −1</span></li>
+        <li><span class="math sm"><span class="frac"><span>∂S</span><span>∂<span class="p">b</span></span></span> = −2<span class="sum"><b>Σ</b></span>(<i>y<sub>i</sub></i> − <span class="p">a</span><i>x<sub>i</sub></i> − <span class="p">b</span>)</span><span class="why">sumamos las 595 filas</span></li>
+        <li><span class="math sm">−2[Σ<i>y</i> − <span class="p">a</span>Σ<i>x</i> − <i>n</i><span class="p">b</span>] = 2<span class="p">a</span>Σ<i>x</i> + 2<i>n</i><span class="p">b</span> − 2Σ<i>y</i></span><span class="why">Σb = b + b + … = n·b</span></li>
+        <li class="key"><span class="math sm"><span class="frac"><span>∂S</span><span>∂<span class="p">b</span></span></span> = 107 100<span class="p">a</span> + 1 190<span class="p">b</span> − 1 107 089.8</span><span class="why">con nuestros datos</span></li>
+      </ol>
+      <div class="note r d3">Las dos derivadas son <b>lineales</b> en a y b. Por eso, al igualarlas a cero, el problema se vuelve un <b>sistema lineal 2 × 2</b>.</div>
+    </div>
+  </div>
+  <p class="explica"><b>Paso 4 · derivada respecto a b.</b> Ahora a es constante y u′ = −1. Σb = n·b porque se suma b una vez por dato. Las dos derivadas son <b>lineales</b> en a y b: al igualarlas a 0 queda un sistema 2 × 2.</p>
+</section>
+
+<section class="slide" data-title="Despejamos a* y b*" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Solución del sistema normal por sustitución</span><span class="num">A5</span></div>
+    <div class="body">
+      <div class="head r d1"><span class="eyebrow">Álgebra</span><h2>Del sistema a la <em>fórmula cerrada</em></h2></div>
+      <div class="fx r d2"><span class="fx-t">Fórmula</span><span class="math sm">Sistema normal: &nbsp; (1) a·Σx<sup>2</sup> + b·Σx = Σxy &nbsp;&nbsp; (2) a·Σx + n·b = Σy</span></div>
+      <ol class="steps r d2">
+        <li><span class="math sm">Ec. 2: &nbsp;<span class="p">a</span>Σ<i>x</i> + <i>n</i><span class="p">b</span> = Σ<i>y</i> &nbsp;⇒&nbsp; <span class="p">b</span> = <span class="frac"><span>Σ<i>y</i> − <span class="p">a</span>Σ<i>x</i></span><span><i>n</i></span></span> = <i>ȳ</i> − <span class="p">a</span><i>x̄</i></span><span class="why">la recta pasa por el centroide (x̄, ȳ)</span></li>
+        <li><span class="math sm">Ec. 1: &nbsp;<span class="p">a</span>Σ<i>x</i><sup>2</sup> + <span class="frac"><span>Σ<i>y</i> − <span class="p">a</span>Σ<i>x</i></span><span><i>n</i></span></span>Σ<i>x</i> = Σ<i>xy</i></span><span class="why">sustituimos b</span></li>
+        <li><span class="math sm"><span class="p">a</span>[<i>n</i>Σ<i>x</i><sup>2</sup> − (Σ<i>x</i>)<sup>2</sup>] = <i>n</i>Σ<i>xy</i> − Σ<i>x</i>Σ<i>y</i></span><span class="why">multiplicamos por n y agrupamos a</span></li>
+        <li class="key"><span class="math sm"><span class="p">a</span>* = <span class="frac"><span><i>n</i>Σ<i>xy</i> − Σ<i>x</i>Σ<i>y</i></span><span><i>D</i><sub>0</sub></span></span>, &nbsp;&nbsp; <i>D</i><sub>0</sub> = <i>n</i>Σ<i>x</i><sup>2</sup> − (Σ<i>x</i>)<sup>2</sup> &nbsp;&nbsp; <span class="p">b</span>* = <span class="frac"><span>Σ<i>y</i> − <span class="p">a</span>*Σ<i>x</i></span><span><i>n</i></span></span></span><span class="why">fórmulas que usa el código</span></li>
+      </ol>
+      <div class="note warn r d3">Si todos los x fueran iguales, <b>D<sub>0</sub> = 0</b> y no habría una única recta. Con 7 ángulos distintos, D<sub>0</sub> &gt; 0.</div>
+    </div>
+  </div>
+  <p class="explica"><b>Paso 5 · resolver el sistema.</b> De la ecuación 2 sale b = ȳ − a·x̄: la recta pasa por el promedio (90°, 930 ms). Se reemplaza en la 1 y se despeja a. <b>D₀</b> = nΣx² − (Σx)²; si todos los x fueran iguales, D₀ = 0 y no habría una única recta.</p>
+</section>
+
+<section class="slide" data-title="De dónde sale cada valor" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Sumatorias a partir de los CSV</span><span class="num">A6</span></div>
+    <div class="body">
+      <div class="head r d1"><span class="eyebrow">Origen de los datos</span><h2>¿De dónde sale <em>cada valor</em>?</h2></div>
+      <div class="fx r d2"><span class="fx-t">Idea</span><span class="math sm">Cada ángulo tiene 85 ensayos (5 aciertos × 17 personas), así que Σ(595 datos) = 85 · Σ(7 ángulos)</span></div>
+      <ol class="steps r d3">
+        <li><span class="math sm"><b>n</b> = 5 aciertos × 7 ángulos × 17 personas = <b>595</b></span><span class="why">filas de los 17 CSV</span></li>
+        <li><span class="math sm"><b>Σx</b> = 85 · (0+30+60+90+120+150+180) = 85 · 630 = <b>53 550</b></span><span class="why">columna angulo_grados</span></li>
+        <li><span class="math sm"><b>Σx²</b> = 85 · (0+900+3 600+8 100+14 400+22 500+32 400) = 85 · 81 900 = <b>6 961 500</b></span><span class="why">cada ángulo al cuadrado</span></li>
+        <li><span class="math sm"><b>Σy</b> = 85 · (718.68+751.74+790.02+954.60+1006.84+1121.30+1169.12) = <b>553 544.9</b></span><span class="why">columna tiempo_ms; 85 × media</span></li>
+        <li><span class="math sm"><b>Σxy</b> = 85 · (0+22 552.09+47 401.34+85 913.79+120 820.24+168 194.65+210 442.02) = <b>55 702 551</b></span><span class="why">ángulo × media de ese ángulo</span></li>
+      </ol>
+      <p class="cap r d4">Ojo: sumando las medias ya redondeadas da <b>6 512.30</b>; con todos los decimales es <b>6 512.29</b>, y 85 × 6 512.2929 = 553 544.9.</p>
+    </div>
+  </div>
+  <p class="explica"><b>Paso 6 · las sumas.</b> Salen de los 17 CSV: columna angulo_grados (x) y tiempo_ms (y). Como cada ángulo tiene 85 ensayos, Σ de los 595 datos = 85 × Σ de los 7 ángulos o de las 7 medias.</p>
+</section>
+
+<section class="slide" data-title="Con nuestros números" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Sustitución numérica · n = 595</span><span class="num">A7</span></div>
+    <div class="body">
+      <div class="head r d1"><span class="eyebrow">Cálculo</span><h2>Sustituimos las <em>sumatorias</em></h2></div>
+      <div class="fx r d2"><span class="fx-t">Fórmula</span><span class="math sm">a* = <span class="frac"><span>nΣxy − Σx·Σy</span><span>nΣx<sup>2</sup> − (Σx)<sup>2</sup></span></span> &nbsp;&nbsp;&nbsp; b* = <span class="frac"><span>Σy − a*·Σx</span><span>n</span></span></span></div>
+      <div class="row r d2" style="gap:.6rem;flex-wrap:wrap">
+        <span class="chip">n = 595</span><span class="chip">Σx = 53 550</span><span class="chip">Σy = 553 544.9</span><span class="chip">Σx² = 6 961 500</span><span class="chip">Σxy = 55 702 551</span>
+      </div>
+      <ol class="steps r d3">
+        <li><span class="math sm"><i>D</i><sub>0</sub> = 595(6 961 500) − 53 550<sup>2</sup> = 4 142 092 500 − 2 867 602 500 = <b>1 274 490 000</b></span></li>
+        <li><span class="math sm">Numerador = 595(55 702 551) − 53 550(553 544.9) = 33 143 017 845 − 29 642 329 395 = <b>3 500 688 450</b></span></li>
+        <li class="key"><span class="math sm"><span class="p">a</span>* = <span class="frac"><span>3 500 688 450</span><span>1 274 490 000</span></span> = <b class="amber">2.746737 ms/°</b></span><span class="why">costo de rotar 1 grado</span></li>
+        <li class="key"><span class="math sm"><span class="p">b</span>* = <span class="frac"><span>553 544.9 − 2.746737(53 550)</span><span>595</span></span> = <span class="frac"><span>406 457.15</span><span>595</span></span> = <b class="amber">683.1213 ms</b></span><span class="why">tiempo a 0°</span></li>
+      </ol>
+      <p class="cap r d4">Con la tabla de 7 medias: <span class="mono">D<sub>0</sub> = 7(81 900) − 630² = 176 400</span> y <span class="mono">a* = 484 524.4 / 176 400 = 2.746737</span>. <b>Mismo resultado.</b></p>
+    </div>
+  </div>
+  <p class="explica"><b>Paso 7 · sustituir.</b> Se meten las sumas en la fórmula: D₀ = 1 274 490 000, numerador = 3 500 688 450, <b>a* = 2.746737</b> ms por grado y <b>b* = 683.1213</b> ms. Con la tabla de 7 medias da lo mismo.</p>
+</section>
+
+<section class="slide" data-title="Comprobamos ∇S(a*, b*) = 0" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Verificación del punto crítico</span><span class="num">A8</span></div>
+    <div class="body">
+      <div class="head r d1"><span class="eyebrow">Verificación</span><h2>En el óptimo el gradiente <em>se anula</em>; fuera de él, no</h2></div>
+      <div class="fx r d2"><span class="fx-t">Fórmula</span><span class="math sm"><span class="frac"><span>∂S</span><span>∂a</span></span> = 2a·Σx<sup>2</sup> + 2b·Σx − 2Σxy &nbsp;&nbsp;&nbsp; <span class="frac"><span>∂S</span><span>∂b</span></span> = 2a·Σx + 2n·b − 2Σy</span></div>
+      <div class="two r d2">
+        <div class="card glass hot"><span class="tag">En (a*, b*) = (2.746737, 683.1213)</span>
+          <p class="math sm" style="white-space:normal">∂S/∂a = 38 242 815 + 73 162 287 − 111 405 102 = <b class="good">0</b></p>
+          <p class="math sm" style="white-space:normal">∂S/∂b = 294 175.5 + 812 914.3 − 1 107 089.8 = <b class="good">0</b></p>
+          <p>El código obtiene ∇S = (−7.2 × 10<sup>−9</sup>, −2.0 × 10<sup>−10</sup>): cero salvo redondeo.</p>
+        </div>
+        <div class="card glass"><span class="tag">En la candidata 1 · (4.25, 583)</span>
+          <p class="math sm" style="white-space:normal">∂S/∂a = 59 172 750 + 62 439 300 − 111 405 102 = <b class="amber">10 206 948</b></p>
+          <p class="math sm" style="white-space:normal">∂S/∂b = 455 175 + 693 770 − 1 107 089.8 = <b class="amber">41 855.2</b></p>
+          <p>Ambas positivas ⇒ conviene <b>bajar</b> a y b. −∇S apunta hacia el mínimo.</p>
+        </div>
+      </div>
+      <p class="cap r d3">Plano tangente: <span class="mono">z = S(a₀, b₀) + S<sub>a</sub>(a − a₀) + S<sub>b</sub>(b − b₀)</span>. Si S<sub>a</sub> = S<sub>b</sub> = 0, el plano es <b>horizontal</b>.</p>
+    </div>
+  </div>
+  <p class="explica"><b>Paso 8 · comprobar.</b> En (a*, b*) las dos derivadas dan 0: la tangente es horizontal, es un punto crítico. En otra recta, como (4.25, 583), dan positivas: conviene bajar a y b. El <b>plano tangente</b> usa las derivadas como pendientes; si las dos son 0, es horizontal.</p>
+</section>
+
+<section class="slide" data-title="Segundas derivadas, una por una" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Derivamos otra vez las parciales lineales</span><span class="num">A9</span></div>
+    <div class="body">
+      <div class="head r d1"><span class="eyebrow">Segundo orden</span><h2>Cuatro derivadas, <em>tres distintas</em></h2></div>
+      <div class="fx r d2"><span class="fx-t">Fórmula</span><span class="math sm">H = [ [S<sub>aa</sub>, S<sub>ab</sub>], [S<sub>ba</sub>, S<sub>bb</sub>] ] &nbsp;&nbsp; Mínimo si det H = S<sub>aa</sub>·S<sub>bb</sub> − S<sub>ab</sub><sup>2</sup> &gt; 0 y S<sub>aa</sub> &gt; 0</span></div>
+      <ol class="steps r d2">
+        <li><span class="math sm">S<sub><i>aa</i></sub> = <span class="frac"><span>∂</span><span>∂<span class="p">a</span></span></span>(2<span class="p">a</span>Σ<i>x</i><sup>2</sup> + 2<span class="p">b</span>Σ<i>x</i> − 2Σ<i>xy</i>) = 2Σ<i>x</i><sup>2</sup> = <b>13 923 000</b></span><span class="why">curvatura en la dirección de a</span></li>
+        <li><span class="math sm">S<sub><i>bb</i></sub> = <span class="frac"><span>∂</span><span>∂<span class="p">b</span></span></span>(2<span class="p">a</span>Σ<i>x</i> + 2<i>n</i><span class="p">b</span> − 2Σ<i>y</i>) = 2<i>n</i> = <b>1 190</b></span><span class="why">curvatura en la dirección de b</span></li>
+        <li><span class="math sm">S<sub><i>ab</i></sub> = <span class="frac"><span>∂</span><span>∂<span class="p">b</span></span></span>(2<span class="p">a</span>Σ<i>x</i><sup>2</sup> + 2<span class="p">b</span>Σ<i>x</i> − 2Σ<i>xy</i>) = 2Σ<i>x</i> = <b>107 100</b></span><span class="why">término cruzado: acopla a con b</span></li>
+        <li><span class="math sm">S<sub><i>ba</i></sub> = <span class="frac"><span>∂</span><span>∂<span class="p">a</span></span></span>(2<span class="p">a</span>Σ<i>x</i> + 2<i>n</i><span class="p">b</span> − 2Σ<i>y</i>) = 2Σ<i>x</i> = <b>107 100</b> = S<sub><i>ab</i></sub></span><span class="why">teorema de Schwarz (Clairaut)</span></li>
+      </ol>
+      <div class="note r d3">Ninguna depende de a ni de b: <b>H es constante</b>. La curvatura es la misma en todo el plano.</div>
+    </div>
+  </div>
+  <p class="explica"><b>Paso 9 · curvatura.</b> Se deriva otra vez: S<sub>aa</sub> = 2Σx², S<sub>bb</sub> = 2n, S<sub>ab</sub> = S<sub>ba</sub> = 2Σx (teorema de Schwarz: las mixtas son iguales). Ninguna tiene a ni b: <b>H es constante</b>, la curvatura es igual en todo el plano.</p>
+</section>
+
+<section class="slide" data-title="Valores propios a mano" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Polinomio característico de H</span><span class="num">A10</span></div>
+    <div class="body">
+      <div class="head r d1"><span class="eyebrow">Álgebra lineal</span><h2>det(H − λI) = 0: <em>dos curvaturas</em> positivas</h2></div>
+      <div class="fx r d2"><span class="fx-t">Fórmula</span><span class="math sm">det(H − λI) = 0 &nbsp;⇒&nbsp; λ<sup>2</sup> − (traza)·λ + det H = 0 &nbsp;⇒&nbsp; λ = <span class="frac"><span>traza ± √(traza<sup>2</sup> − 4·det H)</span><span>2</span></span></span></div>
+      <ol class="steps r d2">
+        <li><span class="math sm">det(H − λ<i>I</i>) = (13 923 000 − λ)(1 190 − λ) − 107 100<sup>2</sup> = 0</span></li>
+        <li><span class="math sm">λ<sup>2</sup> − <b>13 924 190</b> λ + <b>5 097 960 000</b> = 0</span><span class="why">traza y determinante de H</span></li>
+        <li><span class="math sm">λ = <span class="frac"><span>13 924 190 ± √(13 924 190<sup>2</sup> − 4 · 5 097 960 000)</span><span>2</span></span> = <span class="frac"><span>13 924 190 ± 13 923 457.74</span><span>2</span></span></span><span class="why">fórmula cuadrática</span></li>
+        <li class="key"><span class="math sm">λ<sub>1</sub> = <b class="amber">366.13</b> &gt; 0 &nbsp;&nbsp;&nbsp; λ<sub>2</sub> = <b class="amber">13 923 823.87</b> &gt; 0</span><span class="why">H definida positiva ⇒ mínimo</span></li>
+      </ol>
+      <div class="two r d3">
+        <div class="note"><b>Comprobación:</b> λ₁ + λ₂ = 13 924 190 = traza; λ₁ · λ₂ = 5.098 × 10⁹ = det H.</div>
+        <div class="note warn"><b>λ₂ / λ₁ ≈ 38 030:</b> el valle es muy alargado. Por eso el descenso de gradiente puro avanza lento.</div>
+      </div>
+    </div>
+  </div>
+  <p class="explica"><b>Paso 10 · valores propios.</b> Son las curvaturas en las dos direcciones principales: det(H − λI) = 0. Salen 366 y 13 923 824; las dos <b>positivas</b> ⇒ H definida positiva ⇒ convexa ⇒ mínimo. Su cociente ≈ 38 000 dice que el valle es muy alargado.</p>
+</section>
+
+<section class="slide" data-title="RMSE, R² y prueba t" data-sec="Anexo · paso a paso" data-who="Todos">
+  <div class="win">
+    <div class="bar"><button class="back" data-prev aria-label="Anterior">‹</button><span class="wt">Calidad del ajuste con fórmulas</span><span class="num">A11</span></div>
+    <div class="body">
+      <div class="head r d1"><span class="eyebrow">Calidad del ajuste</span><h2>¿Qué tan buena es la recta? <em>Tres números</em></h2></div>
+      <div class="fx r d2"><span class="fx-t">Fórmula</span><span class="math sm">RMSE = √(S<sub>mín</sub> / n) &nbsp;&nbsp; R<sup>2</sup> = 1 − <span class="frac"><span>S<sub>mín</sub></span><span>SST</span></span> &nbsp;&nbsp; SST = Σ(y − ȳ)<sup>2</sup> &nbsp;&nbsp; t = <span class="frac"><span>a*</span><span>error estándar de a*</span></span></span></div>
+      <ol class="steps r d2">
+        <li><span class="math sm">RMSE = √(S<sub>mín</sub> / <i>n</i>) = √(156 163 296.22 / 595) = <b>512.3 ms</b></span><span class="why">error típico de un ensayo</span></li>
+        <li><span class="math sm">SST = Σ<i>y</i><sup>2</sup> − (Σ<i>y</i>)<sup>2</sup>/<i>n</i> = 687 301 826.87 − 553 544.9<sup>2</sup>/595 = <b>172 323 749.03</b></span><span class="why">variación total de los tiempos</span></li>
+        <li><span class="math sm">R<sup>2</sup> = 1 − <span class="frac"><span>156 163 296.22</span><span>172 323 749.03</span></span> = <b>0.0938</b> &nbsp;·&nbsp; con las 7 medias: 1 − <span class="frac"><span>6 186.54</span><span>196 309.52</span></span> = <b class="good">0.9685</b></span><span class="why">fracción de la variación que explica la recta</span></li>
+        <li class="key"><span class="math sm"><i>t</i> = <span class="frac"><span><span class="p">a</span>*</span><span>√( S<sub>mín</sub>/(<i>n</i>−2) / Σ(<i>x</i> − <i>x̄</i>)<sup>2</sup> )</span></span> = <span class="frac"><span>2.7467</span><span>0.3506</span></span> = <b class="amber">7.83</b> &nbsp;⇒&nbsp; <i>p</i> = 2.2 × 10<sup>−14</sup></span><span class="why">la pendiente no es cero</span></li>
+      </ol>
+      <p class="cap r d3">Un R<sup>2</sup> bajo <b>no</b> significa que la recta esté mal: el efecto es claro (t = 7.83), pero cada ensayo individual tiene mucho ruido.</p>
+    </div>
+  </div>
+  <p class="explica"><b>Paso 11 · calidad.</b> <b>RMSE</b> = error típico de un ensayo (512 ms). <b>R²</b> = qué parte de la variación explica la recta. <b>t</b> = a* / error estándar: cuántas veces es la pendiente más grande que su incertidumbre; t = 7.83 ⇒ la pendiente no es 0.</p>
 </section>
 
 </main>
@@ -666,14 +1206,57 @@
   <button id="bNext" aria-label="Siguiente (→)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
   <span class="sep"></span>
   <button id="bToc" aria-label="Índice (G)" aria-pressed="false"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></button>
+  <button id="bProfe" aria-label="Preguntas del profe (Q)" aria-pressed="false" title="Preguntas del profe (Q)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.2a2.8 2.8 0 0 1 5.4 1c0 1.9-2.7 2.4-2.7 4"/><circle cx="12" cy="17.4" r=".6" fill="currentColor"/></svg></button>
   <span class="orb" aria-hidden="true"></span>
   <button id="bFull" aria-label="Pantalla completa (F)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
 </nav>
 
 <div class="overlay" id="toc" role="dialog" aria-label="Índice de diapositivas"><h4>Índice</h4><div class="toc" id="tocGrid"></div></div>
+<button type="button" id="goP" class="gop" hidden title="Paso a paso y preguntas de esta slide (P)">P · paso a paso y preguntas</button>
+<button type="button" id="goBack" class="gop back" hidden>← Volver</button>
+<div class="overlay" id="profe" role="dialog" aria-label="Preguntas del profe"><h4>Preguntas del profe <small>(tecla Q · Esc cierra)</small></h4><input id="pqFiltro" type="search" placeholder="Buscar: derivada, convexa, a y b, residuo…" aria-label="Buscar pregunta"><ol class="pqlist" id="pqList"><li><div class="pq"><b>¿Qué es xᵢ? ¿Qué es yᵢ?</b><span>xᵢ = ángulo de la R en el ensayo i (0° a 180°). yᵢ = tiempo de respuesta de ese ensayo, en ms. i numera los 595 ensayos.</span></div><button type="button" data-go-title="Slide 2: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Cómo midieron el tiempo? ¿Con qué instrumento?</b><span>App web propia; el reloj del navegador performance.now() (precisión menor a 1 ms) arranca cuando aparece la R y para con la tecla F o J.</span></div><button type="button" data-go-title="Slide 2: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Qué tipo de datos trabajan?</b><span>Pares (ángulo, tiempo): el ángulo lo controlamos (7 valores), el tiempo lo medimos (número continuo en ms). 595 pares en 17 CSV.</span></div><button type="button" data-go-title="Slide 2: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Por qué una recta?</b><span>Los 7 promedios suben casi en línea recta. Probamos una curva y no mejora (slide 24).</span></div><button type="button" data-go-title="Slide 2: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Qué son a y b? ¿Qué representan?</b><span>a = pendiente: ms extra por cada grado. b = intercepto: tiempo que predice la recta a 0°. Cada par (a, b) es una recta.</span></div><button type="button" data-go-title="Slide 5: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Qué es S? ¿Cómo se llama esa función?</b><span>Función de error (de costo u objetivo): suma de los residuos al cuadrado. Le das una recta y te dice qué tan mal se ajusta. Método: mínimos cuadrados.</span></div><button type="button" data-go-title="Slide 5: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Por qué el error va al cuadrado?</b><span>Para que + y − no se cancelen, para castigar errores grandes y porque así S es derivable.</span></div><button type="button" data-go-title="Slide 5: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Cuál es el punto de partida para hallar el mínimo?</b><span>Derivar S respecto a a y a b, igualar a cero, resolver el sistema y después revisar la segunda derivada.</span></div><button type="button" data-go-title="Slide 7: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Qué es la derivada? ¿Para qué derivan?</b><span>La pendiente de la recta tangente en un punto. Derivamos para saber dónde el error deja de bajar.</span></div><button type="button" data-go-title="Slide 7: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Por qué se iguala a cero? (no es «para despejar»)</b><span>En un máximo o un mínimo la tangente es horizontal: pendiente 0. Igualar a cero es buscar los puntos críticos.</span></div><button type="button" data-go-title="Slide 7: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Por qué derivadas parciales?</b><span>S depende de dos variables: la parcial respecto a a mueve solo la pendiente; respecto a b, solo el intercepto.</span></div><button type="button" data-go-title="Slide 7: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>Derive ∂S/∂a en el tablero</b><span>Regla de la cadena: 2(y − ax − b)·(−x) ⇒ ∂S/∂a = −2Σx(y − ax − b).</span></div><button type="button" data-go-title="∂S/∂a paso a paso">Ver respuesta</button></li><li><div class="pq"><b>Derive ∂S/∂b</b><span>2(y − ax − b)·(−1) ⇒ ∂S/∂b = −2Σ(y − ax − b); Σb = n·b.</span></div><button type="button" data-go-title="∂S/∂b paso a paso">Ver respuesta</button></li><li><div class="pq"><b>¿Cómo resolvieron el sistema?</b><span>De la ec. 2, b = ȳ − a·x̄; se reemplaza en la 1 y se despeja a*.</span></div><button type="button" data-go-title="Despejamos a* y b*">Ver respuesta</button></li><li><div class="pq"><b>Cuando encuentra a* y b*, ¿qué encontró?</b><span>La mejor recta: a* = 2.75 ms por grado (costo de girar), b* = 683 ms (ver, decidir, presionar).</span></div><button type="button" data-go-title="Slide 5: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿De dónde sale cada número?</b><span>De los 17 CSV: Σ de los 595 datos = 85 × Σ de los 7 ángulos.</span></div><button type="button" data-go-title="De dónde sale cada valor">Ver respuesta</button></li><li><div class="pq"><b>Haga la cuenta de a*</b><span>D₀ = 1 274 490 000; numerador = 3 500 688 450; a* = 2.746737.</span></div><button type="button" data-go-title="Con nuestros números">Ver respuesta</button></li><li><div class="pq"><b>¿Cómo comprueban que es un punto crítico?</b><span>Sustituyendo (a*, b*) en las derivadas: dan 0.</span></div><button type="button" data-go-title="Comprobamos ∇S(a*, b*) = 0">Ver respuesta</button></li><li><div class="pq"><b>¿Cómo saben que es mínimo y no máximo?</b><span>Segunda derivada: det H &gt; 0 y S_aa &gt; 0 ⇒ mínimo.</span></div><button type="button" data-go-title="Slide 9: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Qué es convexa? ¿Y cóncava?</b><span>Convexa = taza, curva hacia arriba ⇒ mínimo. Cóncava = cúpula ⇒ máximo. S es convexa.</span></div><button type="button" data-go-title="Slide 9: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Mínimo local o global? ¿Tiene mínimo local?</b><span>Local = el más bajo de su alrededor; global = el más bajo de todos. H es constante ⇒ un solo mínimo: es local y global.</span></div><button type="button" data-go-title="Slide 9: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Cómo se sacan las segundas derivadas?</b><span>Derivando otra vez las parciales: S_aa = 2Σx², S_bb = 2n, S_ab = 2Σx.</span></div><button type="button" data-go-title="Segundas derivadas, una por una">Ver respuesta</button></li><li><div class="pq"><b>¿Qué son los valores propios?</b><span>Las curvaturas principales: 366 y 13 923 824, ambas positivas ⇒ mínimo.</span></div><button type="button" data-go-title="Valores propios a mano">Ver respuesta</button></li><li><div class="pq"><b>¿Qué superficie es esa? ¿Qué tipo de función?</b><span>Un paraboloide elíptico: S es un polinomio de grado 2 en a y b. Es convexo.</span></div><button type="button" data-go-title="Slide 10: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Cómo obtuvieron esa gráfica? ¿Qué graficaron?</b><span>El error S(a, b) en una cuadrícula de 140 × 140 rectas alrededor del óptimo: z = S(a, b).</span></div><button type="button" data-go-title="Slide 10: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Por qué el gradiente es perpendicular a las curvas?</b><span>Sobre una curva de nivel S no cambia: ∇S · r′ = 0.</span></div><button type="button" data-go-title="Slide 10: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Por qué las elipses se inclinan?</b><span>S_ab = 2Σx ≠ 0: a y b están acoplados. Centrando x − 90° se enderezan.</span></div><button type="button" data-go-title="Slide 10: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Qué es una traza?</b><span>Cortar la superficie fijando una variable: queda una parábola con vértice en el óptimo.</span></div><button type="button" data-go-title="Slide 10: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Usaron librerías?</b><span>No para el ajuste: solo sumas y divisiones. NumPy y SciPy solo verifican.</span></div><button type="button" data-go-title="Slide 16: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Por qué el descenso hace zigzag?</b><span>El valle es 38 000 veces más curvo en una dirección; el paso tiene que ser diminuto.</span></div><button type="button" data-go-title="Slide 16: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿10⁻¹⁴ es un error?</b><span>No: redondeo del computador (16 cifras).</span></div><button type="button" data-go-title="Slide 16: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Qué es el residuo?</b><span>Real − predicho: cuánto falló la recta en cada ensayo.</span></div><button type="button" data-go-title="Slide 21: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>R² = 0.094, ¿el modelo es malo?</b><span>No: el 90 % de la variación es dentro de cada ángulo. Con los 7 promedios, 0.97.</span></div><button type="button" data-go-title="Slide 21: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿El efecto es real?</b><span>16 de 17 personas tienen pendiente positiva; p = 0.00027.</span></div><button type="button" data-go-title="Slide 21: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Por qué la recta de 595 = la de 7 medias?</b><span>S = SS_intra + 85·S_medias; SS_intra no depende de a ni b.</span></div><button type="button" data-go-title="Slide 21: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Y los atípicos? ¿Y una curva?</b><span>Sin atípicos a* = 2.61 / 2.41; la curva mejora R² solo 0.0003.</span></div><button type="button" data-go-title="Slide 24: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Manipularon los datos?</b><span>2 personas se sumaron tras ver su ajuste; por eso reportamos 15 (2.65), 17 (2.75) y todo (2.41).</span></div><button type="button" data-go-title="Slide 24: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Qué es 364 °/s? ¿Cerebro vs. computador?</b><span>1000 / 2.75. El cerebro tarda más con más giro; el computador tarda lo mismo.</span></div><button type="button" data-go-title="Slide 24: qué es cada cosa">Ver respuesta</button></li><li><div class="pq"><b>¿Qué es RMSE y la prueba t?</b><span>RMSE = error típico (512 ms); t = 7.83 ⇒ la pendiente no es 0.</span></div><button type="button" data-go-title="RMSE, R² y prueba t">Ver respuesta</button></li></ol></div>
 <div class="overlay lightbox" id="lightbox" role="dialog" aria-label="Imagen ampliada"><div class="frame" id="lbFrame"></div></div>
-<div class="hint" id="hint"><kbd>←</kbd> <kbd>→</kbd> navegar · <kbd>G</kbd> índice · <kbd>F</kbd> pantalla completa</div>
+<div class="hint" id="hint"><kbd>←</kbd> <kbd>→</kbd> navegar · <kbd>G</kbd> índice · <kbd>P</kbd> paso a paso / volver · <kbd>Q</kbd> preguntas · <kbd>F</kbd> pantalla completa</div>
 
 <script src="assets/deck.js"></script>
+<script>
+/* Navegación de respaldo: botón P (slide → su tema en el anexo), ← Volver, y panel de preguntas (Q) */
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('section.slide'));
+  var ov=document.getElementById('profe'), bt=document.getElementById('bProfe'), f=document.getElementById('pqFiltro');
+  var bP=document.getElementById('goP'), bV=document.getElementById('goBack');
+  var origin=null;
+  try{var o=sessionStorage.getItem('neurocode-origin');if(o!==null)origin=+o}catch(e){}
+  function cur(){var a=document.querySelector('section.slide.active');return a?slides.indexOf(a):0}
+  function goIdx(k){if(k<0||k>=slides.length)return;var b=document.querySelectorAll('#tocGrid button')[k];if(b){b.click()}else{location.hash='#'+(k+1);location.reload()}}
+  function idxOf(t){for(var i=0;i<slides.length;i++){if(slides[i].dataset.title===t)return i}return -1}
+  function saveO(){try{origin===null?sessionStorage.removeItem('neurocode-origin'):sessionStorage.setItem('neurocode-origin',origin)}catch(e){}}
+  function jumpTitle(t){var k=idxOf(t);if(k<0)return;var c=cur();if(!slides[c].matches('[data-sec^="Anexo"]')){origin=c;saveO()}goIdx(k)}
+  function back(){if(origin===null)return;var o=origin;origin=null;saveO();goIdx(o)}
+  function refresh(){
+    var s=slides[cur()];if(!s)return;
+    var inA=s.matches('[data-sec^="Anexo"]');
+    bP.hidden=!s.dataset.p; bV.hidden=!(inA&&origin!==null);
+    if(!bV.hidden)bV.textContent='← Volver a la slide '+(origin+1);
+  }
+  bP.addEventListener('click',function(){var s=slides[cur()];if(s&&s.dataset.p)jumpTitle(s.dataset.p)});
+  bV.addEventListener('click',back);
+  document.addEventListener('slidechange',function(){setTimeout(refresh,0)});
+  document.addEventListener('click',function(e){var b=e.target.closest('[data-go-title]');if(!b)return;e.stopPropagation();if(ov)set(false);jumpTitle(b.dataset.goTitle)},true);
+  function set(on){if(!ov)return;ov.classList.toggle('open',on);bt.setAttribute('aria-pressed',on);if(on){f.value='';filt();setTimeout(function(){f.focus()},30)}}
+  function filt(){var q=f.value.trim().toLowerCase();document.querySelectorAll('#pqList li').forEach(function(li){li.hidden=q&&li.textContent.toLowerCase().indexOf(q)<0})}
+  if(bt)bt.addEventListener('click',function(){set(!ov.classList.contains('open'))});
+  if(ov)ov.addEventListener('click',function(e){if(e.target===ov)set(false)});
+  if(f){f.addEventListener('input',filt);f.addEventListener('keydown',function(e){if(e.key==='Enter'){var v=document.querySelector('#pqList li:not([hidden]) [data-go-title]');if(v)v.click()}if(e.key==='Escape')set(false);e.stopPropagation()})}
+  addEventListener('keydown',function(e){
+    if(e.target.matches&&e.target.matches('input,textarea'))return;
+    if(e.key==='p'||e.key==='P'){e.preventDefault();e.stopPropagation();if(!bV.hidden)back();else if(!bP.hidden)bP.click()}
+    else if(e.key==='q'||e.key==='Q'||e.key==='?'){e.preventDefault();set(!ov.classList.contains('open'))}
+    else if(e.key==='Escape'&&ov&&ov.classList.contains('open')){set(false)}
+  },true);
+  refresh();
+})();
+</script>
+
 </body>
 </html>

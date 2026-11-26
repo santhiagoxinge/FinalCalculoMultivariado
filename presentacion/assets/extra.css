@@ -89,3 +89,34 @@ table.t td.n.pos{color:var(--good)} table.t td.n.neg{color:var(--amber)}
 
 /* franja de conclusión (diapositiva 26) */
 .banda{background:var(--block);color:#fff;text-align:center;padding:.7rem 1rem;font-size:clamp(.95rem,1.3vw,1.35rem);border-radius:2px}
+
+/* panel «Preguntas del profe» (botón ? y tecla P) */
+#profe h4 small{font-size:.9rem;color:var(--faint)}
+#pqFiltro{display:block;width:100%;max-width:1500px;margin:0 auto 1rem;padding:.7rem 1rem;font:inherit;font-size:1.05rem;border:1px solid var(--block);border-radius:4px;background:#fff;color:var(--ink)}
+.pqlist{list-style:none;margin:0 auto;padding:0;max-width:1500px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:10px}
+.pqlist li{display:flex;gap:.8rem;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--edge,#d5dde0);border-left:4px solid var(--block);border-radius:4px;padding:.7rem .9rem}
+.pqlist li[hidden]{display:none}
+.pq{display:flex;flex-direction:column;gap:.2rem;min-width:0}
+.pq b{color:var(--block);font-size:1.02rem}
+.pq span{font-size:.9rem;line-height:1.35;color:var(--ink)}
+.pqlist button{flex:none;border:0;background:var(--block);color:#fff;padding:.5rem .8rem;border-radius:3px;cursor:pointer;font:inherit;font-size:.85rem;white-space:nowrap}
+.pqlist button:hover,.pqlist button:focus-visible{background:var(--amber);outline:none}
+
+/* botón P (ir al tema de la slide en el anexo) y ← Volver */
+.gop{position:fixed;right:clamp(10px,1.6vw,28px);top:clamp(96px,11vh,132px);z-index:25;border:0;cursor:pointer;
+  background:var(--amber);color:#fff;font-family:var(--serif);font-size:clamp(.8rem,.95vw,1rem);padding:.45rem .8rem;border-radius:4px;
+  box-shadow:0 4px 14px -6px rgba(0,0,0,.35)}
+.gop.back{background:var(--block)}
+.gop:hover,.gop:focus-visible{filter:brightness(1.1);outline:2px solid var(--ink);outline-offset:2px}
+.gop[hidden]{display:none}
+/* slides de preguntas del anexo */
+.qa-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.card.qa .tag{font-size:clamp(.95rem,1.3vw,1.45rem)}
+.card.qa p{font-size:clamp(.92rem,1.22vw,1.38rem);line-height:1.4}
+.idx-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))!important}
+.card.jump{all:unset;cursor:pointer;display:flex;flex-direction:column;background:var(--block-body,#f0f6f7);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.card.jump .tag{display:block;background:var(--block);color:#fff;padding:.35rem .7rem;font-size:.8rem}
+.card.jump p{margin:0;padding:.5rem .7rem;font-size:.9rem}
+.card.jump:hover,.card.jump:focus-visible{outline:2px solid var(--amber)}
+.pasolink{align-self:center;border:0;cursor:pointer;background:var(--block);color:#fff;font-family:var(--serif);font-size:clamp(.9rem,1.1vw,1.2rem);padding:.55rem 1.2rem;border-radius:4px;margin-top:.8rem}
+.pasolink:hover,.pasolink:focus-visible{background:var(--amber);outline:none}
