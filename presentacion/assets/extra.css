@@ -72,3 +72,6 @@ table.t td.n.pos{color:var(--good)} table.t td.n.neg{color:var(--amber)}
 .fx{display:flex;align-items:center;gap:1.1em;border:2px solid var(--block);background:#fff;padding:clamp(.35rem,1vh,.8rem) clamp(.7rem,1.2vw,1.2rem)}
 .fx .fx-t{background:var(--block);color:#fff;font-family:var(--serif);font-weight:700;font-size:clamp(.8rem,1.1vw,1.15rem);padding:.2em .7em}
 .fx .math{white-space:normal}
+
+/* espacio para el texto bajo las gráficas grandes */
+.slide[data-title="El tiempo sube con el ángulo"],.slide[data-title="Un valle con un solo fondo"]{padding-bottom:calc(var(--foot-h) + clamp(1.8rem,4.5vh,3rem))}
