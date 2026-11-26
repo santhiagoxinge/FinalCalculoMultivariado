@@ -75,3 +75,17 @@ table.t td.n.pos{color:var(--good)} table.t td.n.neg{color:var(--amber)}
 
 /* espacio para el texto bajo las gráficas grandes */
 .slide[data-title="El tiempo sube con el ángulo"],.slide[data-title="Un valle con un solo fondo"]{padding-bottom:calc(var(--foot-h) + clamp(1.8rem,4.5vh,3rem))}
+
+/* texto explicativo extra en las tarjetas (diapositivas 24 a 29) */
+.card .more{margin:.15rem 0 0;font-size:.86em;line-height:1.35;opacity:.85}
+.t td .sub{display:block;font-size:.8em;opacity:.75;font-weight:400;margin-top:.15rem}
+
+/* franja explicativa al pie (diapositivas 1 a 23): qué es cada símbolo y por qué */
+.explica{position:absolute;left:clamp(1rem,3vw,3.2rem);right:clamp(1rem,3vw,3.2rem);bottom:calc(var(--foot-h) + 40px);margin:0;z-index:3;
+  font-size:clamp(.78rem,1vw,1.08rem);line-height:1.35;color:var(--ink);background:rgba(255,255,255,.92);
+  border-left:4px solid var(--amber);padding:.45rem .8rem;border-radius:4px;pointer-events:none}
+.explica b{color:var(--block,inherit)}
+.slide:has(>.explica){padding-bottom:calc(var(--foot-h) + 40px + clamp(3.4rem,7.5vh,5.2rem))}
+
+/* franja de conclusión (diapositiva 26) */
+.banda{background:var(--block);color:#fff;text-align:center;padding:.7rem 1rem;font-size:clamp(.95rem,1.3vw,1.35rem);border-radius:2px}

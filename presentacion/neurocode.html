@@ -34,6 +34,7 @@
     <p class="tp-inst r d4">Ingeniería de Software,<br>Universidad Cooperativa de Colombia,<br>San Juan de Pasto</p>
     <p class="tp-date r d5">Docente: M.Sc. Alejandro Molina · 26 de noviembre de 2026</p>
   </div>
+  <p class="explica"><b>La pregunta:</b> ¿cuántos milisegundos más tarda el cerebro por cada grado que gira una letra? La respondemos buscando la recta que mejor describe los datos, minimizando una función de dos variables, <b>S(a, b)</b>.</p>
 </section>
 
 <!-- ========================= 02 · EXPERIMENTO ========================= -->
@@ -56,6 +57,7 @@
       </div>
     </div>
   </div>
+  <p class="explica"><b>x</b> = ángulo de la R, en grados (lo controlamos) · <b>y</b> = tiempo de respuesta, en ms (lo medimos). Solo usamos aciertos: si se equivocó, no sabemos si giró la letra o adivinó.</p>
 </section>
 
 <!-- ========================= 02b · CÓMO MEDIMOS ========================= -->
@@ -77,6 +79,7 @@
       <p class="cap r d3">Cada persona termina con <b>5 aciertos por ángulo</b>: 5 × 7 = 35 filas. Por eso el diseño queda <b>balanceado</b> (85 ensayos por ángulo).</p>
     </div>
   </div>
+  <p class="explica"><b>Instrumento:</b> nuestra app web. El reloj del navegador, <b>performance.now()</b>, mide con precisión menor a 1 ms. <b>t₀</b> = instante en que aparece la R; <b>y</b> = momento en que presiona la tecla − t₀.</p>
 </section>
 
 <!-- ========================= 03 · TENDENCIA ========================= -->
@@ -89,6 +92,7 @@
       <p class="cap r d3">Media <b>718.7 ms</b> a 0° → <b>1169.1 ms</b> a 180°. &nbsp;¿Cuál es la <span class="amber">mejor recta</span>?</p>
     </div>
   </div>
+  <p class="explica">Cada punto de color es un ensayo; los negros son el <b>promedio ȳ</b> de los 85 tiempos de cada ángulo. Los promedios suben casi en línea recta: por eso proponemos el modelo <b>y = a·x + b</b>.</p>
 </section>
 
 <!-- ========================= 04 · PUENTE (LABORATORIO) ========================= -->
@@ -124,6 +128,7 @@
       </div>
     </div>
   </div>
+  <p class="explica"><b>a</b> = pendiente: cuántos ms más por cada grado. <b>b</b> = intercepto: el tiempo que predice la recta a 0°. Cada par (a, b) es una recta distinta, o sea un punto del plano; el color es su error <b>S</b>.</p>
 </section>
 
 <!-- ========================= 05 · S(a,b) ========================= -->
@@ -145,6 +150,7 @@
       </div>
     </div>
   </div>
+  <p class="explica"><b>S(a, b)</b> es la función de error (función de costo u objetivo): la suma de los residuos al cuadrado. <b>yᵢ</b> = tiempo medido, <b>a·xᵢ + b</b> = tiempo que predice la recta, <b>i</b> = 1 … 595. Método: mínimos cuadrados.</p>
 </section>
 
 <!-- ========================= 06 · ∇S = 0 ========================= -->
@@ -164,6 +170,7 @@
       </div>
     </div>
   </div>
+  <p class="explica"><b>La derivada es la pendiente de la recta tangente.</b> En el fondo del valle la tangente es horizontal: pendiente 0 en la dirección de a y en la de b. Por eso ∇S = 0: no es «para despejar», es la condición que cumple todo <b>punto crítico</b>. Al resolverla salen las ecuaciones normales.</p>
 </section>
 
 <!-- ========================= 07 · RESULTADO ========================= -->
@@ -194,6 +201,7 @@
       </div>
     </div>
   </div>
+  <p class="explica"><b>a*</b> y <b>b*</b> son la mejor recta, la que menos se equivoca. a* = 2.75 ms es el costo de girar un grado; b* = 683 ms es ver, decidir y presionar sin girar. <b>ŷ</b> («y gorro») = tiempo que predice la recta.</p>
 </section>
 
 <!-- ========================= 08 · HESSIANO ========================= -->
@@ -211,6 +219,7 @@
       </div>
     </div>
   </div>
+  <p class="explica">∇S = 0 da un punto crítico, que puede ser <b>mínimo, máximo o silla</b>. Las segundas derivadas miden la curvatura: <b>H</b> es su matriz. det H > 0 y S<sub>aa</sub> > 0 ⇒ mínimo; H no depende de a ni b ⇒ <b>único y global</b>.</p>
 </section>
 
 <!-- ========================= 09 · EL VALLE (BLENDER) ========================= -->
@@ -236,6 +245,7 @@
       <p class="cap r d3">En el mínimo el plano tangente es <b class="amber">horizontal</b>. La bolita sigue <b>−∇S</b>: perpendicular a las elipses, siempre hacia el fondo.</p>
     </div>
   </div>
+  <p class="explica">El piso son todas las rectas (a, b); la altura <b>z</b> es su error S. <b>Curvas de nivel</b> = rectas con el mismo error. <b>−∇S</b> apunta cuesta abajo y es perpendicular a las curvas de nivel.</p>
 </section>
 
 <!-- ========================= 10 · ELIPSES INCLINADAS ========================= -->
@@ -264,6 +274,7 @@
       </div>
     </div>
   </div>
+  <p class="explica"><b>S<sub>ab</sub></b> mide cómo se acoplan a y b: si sube la pendiente, el intercepto debe bajar para seguir pasando por el centro (90°, 930 ms). Restando 90° a x, S<sub>ab</sub> = 0 y las elipses quedan derechas.</p>
 </section>
 
 <!-- ========================= 11 · TRAZAS ========================= -->
@@ -276,6 +287,7 @@
       <p class="cap r d3">Fija <b>b = b*</b> y mueve <b>a</b> (o al revés): una parábola con vértice en el óptimo.</p>
     </div>
   </div>
+  <p class="explica"><b>Traza:</b> cortar la superficie fijando una variable (b = b*). Queda una parábola en a con el vértice justo en a*, donde la pendiente de la tangente es 0.</p>
 </section>
 
 <!-- ========================= 12 · CÓDIGO ========================= -->
@@ -297,6 +309,7 @@
       <div class="row center r d3"><span class="chip hot">Algoritmo propio</span><span class="chip">sin regresión de librería · NumPy y SciPy solo verifican</span></div>
     </div>
   </div>
+  <p class="explica">Cada caja es un paso del cálculo a mano. <b>n</b> = 595 ensayos; <b>Σ</b> = suma de todos. Las librerías (NumPy, SciPy) solo se usan al final, para verificar.</p>
 </section>
 
 <!-- ========================= 12b · DIAGRAMA DE FLUJO ========================= -->
@@ -336,6 +349,7 @@
       </div>
     </div>
   </div>
+  <p class="explica"><b>load()</b> lee los CSV, <b>fit()</b> calcula a* y b*, <b>hessian()</b> arma H y <b>metrics()</b> da RMSE y R². La rama «no» solo pasaría si todos los ángulos fueran iguales (det H = 0).</p>
 </section>
 
 <!-- ========================= 12c · PSEUDOCÓDIGO ========================= -->
@@ -356,6 +370,7 @@
       </div>
     </div>
   </div>
+  <p class="explica"><b>Sx, Sy, Sxx, Sxy</b> = Σx, Σy, Σx², Σxy, acumuladas en un solo recorrido: <b>O(n)</b>. No hay iteraciones: la fórmula que sale de ∇S = 0 da el mínimo exacto.</p>
 </section>
 
 <!-- ========================= 12d · fit() ========================= -->
@@ -380,6 +395,7 @@
       <p class="cap r d3">No usa ninguna función de regresión: solo <b>sumas, productos y una división</b>. NumPy y SciPy aparecen después, únicamente para verificar.</p>
     </div>
   </div>
+  <p class="explica"><b>x</b> e <b>y</b> son vectores de 595 números. <b>sx**2</b> = (Σx)², el total al cuadrado; <b>sxx</b> = Σx², la suma de los cuadrados. <b>d</b> = D₀ = nΣx² − (Σx)².</p>
 </section>
 
 <!-- ========================= 12e · S, grad, H, metrics ========================= -->
@@ -402,6 +418,7 @@
       <p class="cap r d3">Detalle que lo confirma: <b>hessian(x)</b> solo recibe x. En el código también se ve que el Hessiano no depende de a ni de b.</p>
     </div>
   </div>
+  <p class="explica"><b>e</b> = residuos (real − predicho). <b>grad_S</b> = (∂S/∂a, ∂S/∂b): en (a*, b*) da ≈ 0. <b>hessian(x)</b> no recibe a ni b porque H es constante. <b>sse</b> = S mín, <b>sst</b> = variación total.</p>
 </section>
 
 <!-- ========================= 12f · DESCENSO ========================= -->
@@ -422,6 +439,7 @@
       </div>
     </div>
   </div>
+  <p class="explica"><b>η</b> = tamaño del paso; <b>g_a, g_b</b> = las dos derivadas parciales (el gradiente). Cada paso va en contra del gradiente porque el gradiente apunta cuesta arriba. Llega al mismo mínimo; el resultado oficial es la fórmula.</p>
 </section>
 
 <!-- ========================= 13 · VALIDACIÓN ========================= -->
@@ -443,6 +461,7 @@
       <p class="cap r d3">La diferencia es solo <b>ruido de punto flotante</b>: el cálculo analítico queda verificado.</p>
     </div>
   </div>
+  <p class="explica"><b>Manual</b> = calculadora; <b>código propio</b> = ajuste.py; <b>polyfit</b> y <b>linregress</b> = librerías. 10⁻¹⁴ = 0.00000000000001: es redondeo del computador, no un error.</p>
 </section>
 
 <!-- ========================= 14 · RESIDUOS ========================= -->
@@ -455,6 +474,7 @@
       <div class="row center r d3"><span class="chip">media ē ≈ 0</span><span class="chip">sin patrón curvo</span><span class="chip">el abanico crece con el ángulo</span><span class="chip hot">atípico: P09 · 150° · +5015.7 ms</span></div>
     </div>
   </div>
+  <p class="explica"><b>Residuo eᵢ = yᵢ − (a*·xᵢ + b*)</b>: cuánto falló la recta en cada ensayo. Su promedio es 0 porque ∂S/∂b = 0. El abanico (más dispersión a más ángulo) se llama <b>heterocedasticidad</b>.</p>
 </section>
 
 <!-- ========================= 15 · DOBLE R<sup>2</sup> ========================= -->
@@ -472,6 +492,7 @@
       </div>
     </div>
   </div>
+  <p class="explica"><b>R² = 1 − S mín / SST</b>: qué parte de la variación explica la recta (1 = todo, 0 = nada). <b>SST</b> = error de decir siempre el promedio. Con solo el ángulo, lo máximo posible es ≈ 0.097.</p>
 </section>
 
 <!-- ========================= 16 · 16 DE 17 ========================= -->
@@ -489,6 +510,7 @@
       </div>
     </div>
   </div>
+  <p class="explica">Cada barra es la pendiente <b>aₚ</b> de una persona, con sus 35 ensayos. Si no hubiera efecto, cada una sería como una moneda: que 16 de 17 salgan positivas tiene probabilidad <b>0.00027</b> (prueba de signos).</p>
 </section>
 
 <!-- ========================= 17 · DESCOMPOSICIÓN ========================= -->
@@ -505,6 +527,7 @@
       <p class="cap r d4">Por eso minimizar S sobre 595 ensayos ≡ minimizar el error sobre las <b>7 medias</b>. Con un tiempo base por persona: misma a* = 2.7467 y R<sup>2</sup> sube a 0.38.</p>
     </div>
   </div>
+  <p class="explica"><b>SS<sub>intra</sub></b> = cuánto se alejan los tiempos del promedio de su propio ángulo; no depende de a ni b. <b>85</b> = ensayos por ángulo. Por eso la recta de los 595 ensayos es la misma que la de los 7 promedios.</p>
 </section>
 
 <!-- ========================= 18 · ANÁLISIS A–D ========================= -->
@@ -514,11 +537,12 @@
     <div class="body" style="justify-content:center">
       <div class="head r d1"><span class="eyebrow">Cuatro pruebas de estrés</span><h2>¿Se rompe la conclusión? <em>No.</em></h2></div>
       <div class="cards r d2" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))">
-        <div class="card glass"><span class="tag">A · Sensibilidad</span><h3>±25 ms de ruido</h3><span class="big">σ<sub>a</sub> = 0.017</span><p>solo un 0.60 % de a*</p></div>
-        <div class="card glass"><span class="tag">B · Atípicos</span><h3>Sin el extremo</h3><span class="big">a* = 2.61</span><p>sin todos los &gt; 3 s: a* = 2.41</p></div>
-        <div class="card glass"><span class="tag">C · Cuadrático</span><h3>¿Hace falta una curva?</h3><span class="big">ΔR<sup>2</sup> = +0.0003</span><p>la recta basta</p></div>
-        <div class="card glass"><span class="tag">D · Tamaño N</span><h3>¿Cuántas personas?</h3><span class="big">N ≥ 10</span><p>a*(N) ya se estabiliza</p></div>
+        <div class="card glass"><span class="tag">A · Sensibilidad</span><h3>±25 ms de ruido al azar</h3><p class="more">A cada tiempo le sumamos o restamos hasta 25 ms, y lo repetimos 500 veces.</p><p class="more">La pendiente solo varió</p><span class="big">σ<sub>a</sub> = 0.017</span><p>→ apenas un 0.6 % de 2.75: casi nada</p></div>
+        <div class="card glass"><span class="tag">B · Atípicos</span><h3>Sin los datos más raros</h3><p class="more">Sin el más extremo (P09 a 150°, más de 5 s):</p><span class="big">a* = 2.61</span><p class="more">Sin todos los tiempos mayores a 3 s: a* = 2.41</p><p>→ la pendiente sigue positiva</p></div>
+        <div class="card glass"><span class="tag">C · Cuadrático</span><h3>¿Una curva lo hace mejor?</h3><p class="more">Probamos una parábola en vez de la recta. El R<sup>2</sup> mejora solo</p><span class="big">ΔR<sup>2</sup> = +0.0003</span><p>→ no aporta: la recta basta</p></div>
+        <div class="card glass"><span class="tag">D · Tamaño N</span><h3>¿Cuántas personas bastan?</h3><p class="more">Sumamos personas una por una y recalculamos a*. Desde</p><span class="big">N ≈ 10</span><p class="more">a* casi no cambia.</p><p>→ con 17 personas el resultado es estable</p></div>
       </div>
+      <p class="cap r d3" style="text-align:left">En las 4 pruebas la pendiente <b>sigue positiva</b> (entre 2.4 y 2.75 ms por grado): la conclusión no se rompe.</p>
     </div>
   </div>
 </section>
@@ -533,7 +557,7 @@
         <figure class="screen" style="margin:0" data-zoom><img src="../figuras/07_opciones_BC_A.png" alt="Ajuste lineal, sin atípicos y cuadrático"><span class="zoom">ampliar</span></figure>
         <figure class="screen" style="margin:0" data-zoom><img src="../figuras/07_opciones_BC_C.png" alt="Pendiente acumulada según el número de personas"><span class="zoom">ampliar</span></figure>
       </div>
-      <p class="cap r d3">Izquierda: todos, sin atípico, sin &gt; 3 s y cuadrático. Derecha: <b>a*</b> converge cerca de 2.7 al sumar personas.</p>
+      <p class="cap r d3">Izquierda: las 4 versiones del modelo dan <b>casi la misma recta</b> · Derecha: desde unas 9 personas, la pendiente se queda en <b>2.75</b></p>
     </div>
   </div>
 </section>
@@ -555,6 +579,12 @@
         </table>
       </div>
       <p class="cap r d3" style="text-align:left">2 de los 17 se sumaron después de ver su ajuste; por eso <b>también reportamos con 15</b>. Los 875 incluyen sesiones repetidas y con distracciones.</p>
+      <div class="cards r d4" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+        <div class="card glass"><span class="tag">15 primeros · a* = 2.65</span><p>Las personas que siguieron el protocolo desde el inicio.</p></div>
+        <div class="card glass"><span class="tag">17 · modelo oficial · a* = 2.75</span><p>Llegaron más archivos: quitamos 3 copias exactas y sumamos 2 personas nuevas.</p></div>
+        <div class="card glass"><span class="tag">Todo lo recolectado · a* = 2.41</span><p>Incluye sesiones repetidas y con distracciones (875 ensayos).</p></div>
+      </div>
+      <div class="banda r d5">En las tres versiones a* &gt; 0: el tiempo siempre sube con el ángulo. Por eso reportamos las tres.</div>
     </div>
   </div>
 </section>
@@ -570,6 +600,7 @@
           <div class="head r d1"><span class="eyebrow">Conclusión</span><h2>El cerebro gira <em>paso a paso</em></h2></div>
           <div class="card glass hot r d3"><span class="tag">Cerebro · analógico</span><span class="big">t = 683 + 2.75 θ</span><p>el costo crece con el ángulo · ≈ 364 °/s</p></div>
           <div class="card glass r d4"><span class="tag">Computador · matriz R(θ) 2 × 2</span><span class="big">O(1)</span><p>tarda lo mismo para 10° que para 180°</p></div>
+          <div class="card glass r d5"><span class="tag">¿Qué significa?</span><p class="more">364 °/s sale de 1000 ms ÷ 2.75 ms por grado.</p><p class="more">El cerebro gira la imagen paso a paso, como una película (Shepard y Metzler, 1971).</p><p>→ La línea azul es un esquema, no medida.</p></div>
         </div>
       </div>
     </div>
@@ -587,7 +618,8 @@
         <div class="card glass hot"><span class="tag">02 · Observa −∇S</span><p>la flecha siempre apunta al <b>fondo</b></p></div>
         <div class="card glass"><span class="tag">03 · Compara</span><p>gradiente puro (zigzag) · escalado (<b>250</b> pasos) · centrado (<b>39</b>)</p></div>
       </div>
-      <a class="btn hot big r d3" href="../figuras/superficie_interactiva.html" target="_blank" rel="noopener">Abrir el laboratorio 3D ↗</a>
+      <div class="card glass r d3" style="width:100%;max-width:1200px;text-align:left"><span class="tag">¿Por qué el gradiente puro hace zigzag?</span><p class="more">El valle es muy alargado: en una dirección es unas <b>38 000 veces</b> más curvo que en la otra.</p><p>→ Escalar cada paso (250 pasos) o centrar x̃ = x − 90° (39 pasos) lo corrige.</p></div>
+      <a class="btn hot big r d4" href="../figuras/superficie_interactiva.html" target="_blank" rel="noopener">Abrir el laboratorio 3D ↗</a>
     </div>
   </div>
 </section>
@@ -599,10 +631,10 @@
     <div class="body" style="justify-content:center">
       <div class="head r d1"><span class="eyebrow">En cuatro ideas</span><h2>Lo que nos llevamos</h2></div>
       <div class="cards r d2">
-        <div class="card glass hot"><span class="tag">01 · La recta</span><h3>y = 2.75x + 683</h3><p>cada grado cuesta <b>2.75 ms</b> · ≈ 364 °/s</p></div>
-        <div class="card glass"><span class="tag">02 · El cálculo</span><h3>∇S = 0 · H &gt; 0</h3><p>mínimo <b>único y global</b></p></div>
-        <div class="card glass"><span class="tag">03 · Doble R<sup>2</sup></span><h3>0.0938 · 0.9685</h3><p>misma recta; el ruido está dentro de cada ángulo</p></div>
-        <div class="card glass"><span class="tag">04 · Límites</span><h3>17 personas</h3><p>16 con efecto; el modelo mide la <b>tendencia media</b></p></div>
+        <div class="card glass hot"><span class="tag">01 · La recta</span><h3>y = 2.75x + 683</h3><p>cada grado cuesta <b>2.75 ms</b> · ≈ 364 °/s</p><p class="more">683 ms es el tiempo base: ver, decidir y presionar la tecla.</p></div>
+        <div class="card glass"><span class="tag">02 · El cálculo</span><h3>∇S = 0 · H &gt; 0</h3><p>mínimo <b>único y global</b></p><p class="more">∇S = 0 encuentra el fondo del valle; el Hessiano confirma que es el único.</p></div>
+        <div class="card glass"><span class="tag">03 · Doble R<sup>2</sup></span><h3>0.0938 · 0.9685</h3><p>misma recta; el ruido está dentro de cada ángulo</p><p class="more">R<sup>2</sup> bajo por el ruido entre personas y ensayos (90 %). Con los 7 promedios: 97 %.</p></div>
+        <div class="card glass"><span class="tag">04 · Límites</span><h3>17 personas</h3><p>16 con efecto; el modelo mide la <b>tendencia media</b></p><p class="more">Muestra pequeña, 2 personas añadidas, datos atípicos.</p></div>
       </div>
     </div>
   </div>
@@ -640,7 +672,7 @@
 
 <div class="overlay" id="toc" role="dialog" aria-label="Índice de diapositivas"><h4>Índice</h4><div class="toc" id="tocGrid"></div></div>
 <div class="overlay lightbox" id="lightbox" role="dialog" aria-label="Imagen ampliada"><div class="frame" id="lbFrame"></div></div>
-<div class="hint" id="hint"><kbd>←</kbd> <kbd>→</kbd> navegar · <kbd>N</kbd> notas · <kbd>G</kbd> índice · <kbd>F</kbd> pantalla completa</div>
+<div class="hint" id="hint"><kbd>←</kbd> <kbd>→</kbd> navegar · <kbd>G</kbd> índice · <kbd>F</kbd> pantalla completa</div>
 
 <script src="assets/deck.js"></script>
 </body>
