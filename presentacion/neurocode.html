@@ -170,7 +170,7 @@
       </div>
     </div>
   </div>
-  <p class="explica"><b>La derivada es la pendiente de la recta tangente.</b> En el fondo del valle la tangente es horizontal: pendiente 0 en la dirección de a y en la de b. Por eso ∇S = 0: no es «para despejar», es la condición que cumple todo <b>punto crítico</b>. Al resolverla salen las ecuaciones normales.</p>
+  <p class="explica"><b>La derivada es la pendiente de la recta tangente.</b> En un máximo o un mínimo la tangente es horizontal: pendiente 0. Por eso ∇S = 0 no es «para despejar»: es la condición que cumple todo <b>punto crítico</b>. Así se buscan máximos y mínimos de cualquier función: derivada = 0 da los candidatos y la segunda derivada dice cuál es cuál (slide 9).</p>
 </section>
 
 <!-- ========================= 07 · RESULTADO ========================= -->
@@ -219,7 +219,7 @@
       </div>
     </div>
   </div>
-  <p class="explica">∇S = 0 da un punto crítico, que puede ser <b>mínimo, máximo o silla</b>. Las segundas derivadas miden la curvatura: <b>H</b> es su matriz. det H > 0 y S<sub>aa</sub> > 0 ⇒ mínimo; H no depende de a ni b ⇒ <b>único y global</b>.</p>
+  <p class="explica">∇S = 0 da un punto crítico: <b>mínimo, máximo o silla</b>. Lo decide la curvatura (segundas derivadas, <b>H</b>). det H > 0 y S<sub>aa</sub> > 0 ⇒ S es <b>convexa</b> (forma de taza, curva hacia arriba) ⇒ mínimo; si fuera cóncava sería máximo. <b>Mínimo local</b> = el más bajo de su alrededor; <b>global</b> = el más bajo de todos. H no depende de a ni b, así que S es convexa en todo el plano: no hay otro mínimo, el local es el global.</p>
 </section>
 
 <!-- ========================= 09 · EL VALLE (BLENDER) ========================= -->
@@ -245,7 +245,7 @@
       <p class="cap r d3">En el mínimo el plano tangente es <b class="amber">horizontal</b>. La bolita sigue <b>−∇S</b>: perpendicular a las elipses, siempre hacia el fondo.</p>
     </div>
   </div>
-  <p class="explica">El piso son todas las rectas (a, b); la altura <b>z</b> es su error S. <b>Curvas de nivel</b> = rectas con el mismo error. <b>−∇S</b> apunta cuesta abajo y es perpendicular a las curvas de nivel.</p>
+  <p class="explica">El piso son todas las rectas (a, b); la altura <b>z</b> es su error S. La superficie es <b>convexa</b> (una taza): tiene un solo fondo, así que ese mínimo es <b>global</b>. <b>Curvas de nivel</b> = rectas con el mismo error. <b>−∇S</b> apunta cuesta abajo y es perpendicular a las curvas de nivel.</p>
 </section>
 
 <!-- ========================= 10 · ELIPSES INCLINADAS ========================= -->
@@ -287,7 +287,7 @@
       <p class="cap r d3">Fija <b>b = b*</b> y mueve <b>a</b> (o al revés): una parábola con vértice en el óptimo.</p>
     </div>
   </div>
-  <p class="explica"><b>Traza:</b> cortar la superficie fijando una variable (b = b*). Queda una parábola en a con el vértice justo en a*, donde la pendiente de la tangente es 0.</p>
+  <p class="explica"><b>Traza:</b> cortar la superficie fijando una variable (b = b*). Queda una parábola que abre hacia arriba (convexa), con el vértice justo en a*: ahí la pendiente de la tangente es 0 y es un mínimo.</p>
 </section>
 
 <!-- ========================= 12 · CÓDIGO ========================= -->
