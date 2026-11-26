@@ -51,7 +51,6 @@
       $('#progress').style.width = `${((n + 1) / this.slides.length) * 100}%`;
       document.documentElement.style.setProperty('--px', ((n / (this.slides.length - 1)) * 2 - 1).toFixed(3));
       history.replaceState(null, '', `#${n + 1}`);
-      this.fillNotes();
       $$('#tocGrid button').forEach((b, k) => b.classList.toggle('cur', k === n));
       document.dispatchEvent(new CustomEvent('slidechange', { detail: { index: n, slide: s } }));
     }
@@ -64,16 +63,6 @@
       });
     }
     pauseMedia(s) { $$('video', s).forEach(v => v.pause()); }
-    fillNotes() {
-      const s = this.slides[this.i];
-      const t = $('template.notes', s);
-      $('#notesSec').textContent = `${String(this.i + 1).padStart(2, '0')} · ${s.dataset.sec || ''}`;
-      $('#notesWho').textContent = s.dataset.who || '';
-      $('#notesBody').innerHTML = '';
-      (t ? t.innerHTML.trim().split(/\n+/) : []).forEach(p => {
-        const el = document.createElement('p'); el.textContent = p.trim(); $('#notesBody').appendChild(el);
-      });
-    }
     buildToc() {
       const g = $('#tocGrid');
       this.slides.forEach((s, k) => {
@@ -88,7 +77,6 @@
     toggle(sel, force) {
       const el = $(sel); const on = el.classList.toggle('open', force);
       if (sel === '#toc') $('#bToc').setAttribute('aria-pressed', on);
-      if (sel === '#notes') $('#bNotes').setAttribute('aria-pressed', on);
       return on;
     }
     full() {
@@ -99,7 +87,6 @@
       $('#bPrev').onclick = () => this.prev();
       $('#bNext').onclick = () => this.next();
       $('#bToc').onclick = () => this.toggle('#toc');
-      $('#bNotes').onclick = () => this.toggle('#notes');
       $('#bFull').onclick = () => this.full();
       $$('[data-prev]').forEach(b => b.addEventListener('click', () => this.prev()));
       $('#toc').addEventListener('click', e => { if (e.target.id === 'toc') this.toggle('#toc', false); });
@@ -112,16 +99,15 @@
         else if (['ArrowLeft', 'ArrowUp', 'PageUp'].includes(k)) { e.preventDefault(); this.prev(); }
         else if (k === 'Home') this.go(0);
         else if (k === 'End') this.go(this.slides.length - 1);
-        else if (k === 'n' || k === 'N') this.toggle('#notes');
         else if (k === 'g' || k === 'G') this.toggle('#toc');
         else if (k === 'f' || k === 'F') this.full();
-        else if (k === 'Escape') { this.toggle('#toc', false); this.toggle('#notes', false); }
+        else if (k === 'Escape') { this.toggle('#toc', false); }
         hideHint();
       });
 
       // rueda del ratón (con freno para no saltar varias)
       addEventListener('wheel', e => {
-        if (e.target.closest('.notes, .overlay, canvas')) return;
+        if (e.target.closest('.overlay, canvas')) return;
         const now = Date.now(); if (now - this.lock < 750 || Math.abs(e.deltaY) < 18) return;
         this.lock = now; e.deltaY > 0 ? this.next() : this.prev();
       }, { passive: true });
@@ -129,7 +115,7 @@
       // gesto táctil
       let tx = null, ty = null;
       addEventListener('touchstart', e => {
-        if (e.target.closest('canvas, input, .notes, .overlay')) { tx = null; return; }
+        if (e.target.closest('canvas, input, .overlay')) { tx = null; return; }
         tx = e.touches[0].clientX; ty = e.touches[0].clientY;
       }, { passive: true });
       addEventListener('touchend', e => {

@@ -132,9 +132,6 @@ table.t td.n{font-family:var(--serif)}
 body.ui .dock{opacity:1;pointer-events:auto}
 .dock .count{font-family:var(--serif)}
 .hint{bottom:calc(var(--foot-h) + 12px);font-family:var(--serif)}
-.notes{border-radius:4px;font-family:var(--serif);color:var(--ink);bottom:calc(var(--foot-h) + 70px)}
-.notes h4{font-family:var(--serif);color:var(--block)}
-.notes .who{color:var(--holo)}
 .overlay h4,.toc .tt{color:var(--holo)}
 .toc button{border-radius:3px;font-family:var(--serif)}
 .toc .n{font-family:var(--serif);color:var(--block)}

@@ -262,13 +262,6 @@ tr.hl .barcell i{background:var(--amber)}
 .progress{position:fixed;left:0;top:0;height:2px;z-index:21;background:linear-gradient(90deg,var(--teal),var(--amber));box-shadow:0 0 12px var(--holo);transition:width .6s var(--ease)}
 
 /* ---------- Notas del orador ---------- */
-.notes{position:fixed;right:clamp(8px,1.4vw,18px);top:clamp(8px,1.4vw,18px);bottom:calc(clamp(8px,1.5vh,16px) + 62px);width:min(430px,92vw);z-index:19;
-  padding:1.2rem 1.35rem;border-radius:24px;background:rgba(10,20,26,.84);-webkit-backdrop-filter:blur(26px);backdrop-filter:blur(26px);border:1px solid var(--edge);
-  transform:translateX(112%);transition:transform .5s var(--ease);overflow:auto;font-size:clamp(.88rem,1vw,1.02rem);color:var(--muted)}
-.notes.open{transform:none}
-.notes h4{margin:0 0 .25rem;font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--holo);font-weight:400}
-.notes .who{font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--ink);margin-bottom:.7rem}
-.notes p{margin:0 0 .8rem;line-height:1.6}
 
 /* ---------- Índice y visor ---------- */
 .overlay{position:fixed;inset:0;z-index:30;background:rgba(2,6,9,.84);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);display:none;padding:clamp(1rem,4vw,4rem);overflow:auto}
@@ -397,7 +390,6 @@ table.t tr.hl td{background:#fdf3ea}
 .dock button:hover,.dock button[aria-pressed="true"]{background:rgba(20,33,61,.07)}
 .dock .orb{display:none}
 .progress{background:var(--ink);box-shadow:none;height:3px}
-.notes{background:rgba(255,255,255,.97);color:var(--muted);box-shadow:0 20px 50px -20px rgba(20,33,61,.35)}
 .overlay{background:rgba(245,244,240,.94)}
 .toc button{background:#fff}
 .toc button:hover,.toc button.cur{background:#fff;border-color:var(--ink)}
